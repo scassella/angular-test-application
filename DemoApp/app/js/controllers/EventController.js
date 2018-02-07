@@ -5,38 +5,58 @@ eventsApp.controller('EventController',
 
         $scope.event = {
             name: 'Saras App',
-            title: 'Welcome to the coolest App in the world!',
+            title: 'Sara Cassella',
+            subheading: 'Web Designer and Developer @ General Electric',
+            subsubheading: 'Digital Technology Leadership Program',
             date: 'February 6, 2018',
             location: 'San Francisco',
-            imageUrl: '/img/angularjs-logo.png',
+            imageUrl: '/img/gallery/yousef-espanioly.jpg',
             address: {
                 street: '829 Filbert Street',
                 city: 'San Francisco',
                 state: 'California',
                 zip: '94133'
             },
-            favoriteFoods: [
-                {   name: 'Annies Mac & Cheese',
-                    tastiness: 3,
-                    upVoteCount: 0
+            gallery: [
+                {   imageUrl: '/img/gallery/alex-povolyashko.jpg' },
+                {   imageUrl: '/img/gallery/justin-bisson-beck.jpg' },
+                {   imageUrl: '/img/gallery/scott-webb.jpg' },
+                {   imageUrl: '/img/gallery/sherman-yang.jpg' },
+                {   imageUrl: '/img/gallery/spencer-watson.jpg' },
+                {   imageUrl: '/img/gallery/vashishtha-jogi.jpg' }
+            ],
+            references: [
+                {   name: '',
+                    url: ''
                 },
-                {   name: 'Trader Joes Cheddar Sandwiches',
-                    tastiness: 1,
-                    upVoteCount: 0
+                {   name: '',
+                    url: ''
                 },
-                {   name: 'buratta on toast with honey',
-                    tastiness: 2,
-                    upVoteCount: 0
+                {   name: '',
+                    url: ''
+                },
+                {   name: '',
+                    url: ''
+                }
+            ],
+            social: [
+                {   name: 'facebook',
+                    image: '/img/icons/facebook.png',
+                    url: ''
+                },
+                {   name: 'Github',
+                    image: '/img/icons/github.svg',
+                    url: ''
+                },
+                {   name: 'Instagram',
+                    image: '/img/icons/instagram.png',
+                    url: ''
+                },
+                {   name: 'LinkedIn',
+                    image: '/img/icons/linkedIn.png',
+                    url: ''
                 }
             ]
-        };
-
-        $scope.upVoteFood = function(food) {
-            food.upVoteCount++;
-        };
-
-        $scope.downVoteFood = function(food) {
-            food.upVoteCount--;
         };
 
         $scope.snippet = '<span style="color:pink">Welcome, friends!</span>';
@@ -45,7 +65,5 @@ eventsApp.controller('EventController',
         $scope.booleanValue = true;
 
         $scope.myStyle = {color: 'pink'};
-
-        $scope.sortorder = 'name';
     }
 );

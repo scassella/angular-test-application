@@ -1,4 +1,16 @@
 /* app css stylesheet */
+body {
+    background-color: white;
+    font-family: Helvetica;
+}
+
+.h2-sara {
+    margin: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
 .hoverwell:hover {
   background-color: #52575c;
   cursor: pointer;
@@ -79,3 +91,268 @@ select, textarea {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none;
 }
+
+.container-sara {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.navbar-sara {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    opacity: 0.65;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.nav-sara {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0px 30px;
+    justify-content: center;
+}
+
+a {
+    margin: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: black;
+    font-weight: 500;
+}
+
+.container-inner-sara {
+    width: 100%;
+    background-color: white;
+}
+
+.header-wrapper {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.header {
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.header-info {
+    position: absolute;
+    font-family: Helvetica;
+    padding: 175px 0px;
+    max-height: 600px;
+    text-align: center;
+    color: black;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 3.5rem;
+    line-height: 6rem;
+}
+
+.subheading {
+    font-weight: 100;
+    font-size: 1.7rem;
+    color: black;
+}
+
+.subsubheading {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.inner-page-header-wrapper {
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.inner-header {
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.inner-header-info {
+    position: absolute;
+    font-family: Helvetica;
+    padding: 150px 0px;
+    max-height: 400px;
+    text-align: center;
+    color: black;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+
+.inner-title {
+    font-weight: 100;
+    font-size: 3.5rem;
+    line-height: 6rem;
+}
+
+.body-wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+    min-height: 1000px;
+}
+
+.body-wrapper-inner {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-height: 1000px;
+}
+
+.inner-subheader {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: black;
+    margin: 50px 70px;
+}
+
+hr {
+    margin: 0px 65px;
+    color: darkgray;
+}
+
+.video-wrapper {
+    text-align: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-header {
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.address-wrapper {
+    color: black;
+    margin: 0px 50px;
+    padding: 0px 25px;
+}
+
+.address {
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+}
+
+.form-wrapper {
+    color: black;
+    margin: 0px 50px;
+    padding: 0px 25px;
+}
+
+.contact-form {
+    padding: 20px 20px;
+}
+
+.label-sara {
+    color: black;
+    text-shadow: none !important;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    max-width: 340px;
+}
+
+.footer {
+    height: 350px;
+    background-color: teal;
+    opacity: 0.5;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 310px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-link {
+    color: black;
+    list-style: none;
+}
+
+.social-link a {
+    max-width: 30px;
+}
+
+.copyright {
+    background-color: white;
+    color: gray;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    z-index: 999;
+}
+
+.copyright p {
+    z-index: 1000;
+    padding-top: 10px;
+    color: black;
+}
+
+/*@media (min-width: 769px) {*/
+    /*.header,*/
+    /*.main-nav {*/
+        /*display: flex;*/
+    /*}*/
+    /*.header {*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+    /*.header{*/
+        /*width: 80%;*/
+        /*margin: 0 auto;*/
+        /*max-width: 1150px;*/
+    /*}*/
+/*}*/
+
+/*@media (min-width: 1025px) {*/
+    /*.header {*/
+        /*flex-direction: row;*/
+        /*justify-content: space-between;*/
+    /*}*/
+
+/*}*/

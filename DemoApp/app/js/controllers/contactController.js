@@ -4,14 +4,28 @@ eventsApp.controller('ContactController',
     function ContactController($scope) {
 
         $scope.contact = {
-            name: '',
-            date: '',
-            email: '',
-            message: '',
-            location: {
-                city: ''
+            title: 'Contact Me',
+            imageUrl: '/img/gallery/aaron-burden.jpg',
+            intro: '', //NOTE: Can added angular style for intro depending on if it is empty or not. If empty on a subpage, the div should not have any styles.
+            address: {
+                street: '829 Filbert St',
+                city: 'San Francisco',
+                state: 'California',
+                zip: '94133'
             },
-            imageUrl: ''
+            form: {
+                name: '',
+                date: '',
+                email: '',
+                message: '',
+                location: {
+                    street: '',
+                    city: '',
+                    state: '',
+                    zip: ''
+                },
+                imageUrl: ''
+            }
         };
 
         $scope.sendEmail = function(contact, contactForm) {
