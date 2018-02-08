@@ -211,8 +211,8 @@ a {
 .body-wrapper {
     margin: 0;
     padding: 0;
-    background-color: teal;
-    min-height: 1000px;
+    background-color: white;
+    min-height: 700px;
 }
 
 .body-wrapper-inner {
@@ -234,6 +234,31 @@ a {
 hr {
     margin: 0px 65px;
     color: darkgray;
+}
+
+.adobe-intro {
+    color: black;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+}
+
+.photoshop-content {
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.photoshop-content li {
+    margin: 20px;
+}
+
+.adobe-label {
+    color: black;
 }
 
 .video-wrapper {
@@ -288,6 +313,15 @@ hr {
 
 .gallery-image {
     max-width: 340px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.gallery-image img:hover {
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .footer {
@@ -299,8 +333,14 @@ hr {
 .footer-inner {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     height: 310px;
+}
+
+.map-widget {
+    opacity: 1;
+    margin: 20px;
+    padding: 10px;
 }
 
 .social {
@@ -314,7 +354,7 @@ hr {
 }
 
 .social-link a {
-    max-width: 30px;
+    max-width: 40px;
 }
 
 .copyright {
