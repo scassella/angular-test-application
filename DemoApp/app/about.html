@@ -35,38 +35,82 @@
                 <div class="inner-subheader">{{about.intro}}</div>
                 <hr />
                 <div class="resume">
-                    <p><a href="{{about.resumeUrl}}">Click here to download my resume.</a></p>
+                    <p><a href="{{about.resumeUrl}}" download="saraCassellaResume">Download the pdf</a></p>
+                    <div class="resume-body">
+                        <div class="section-title">Education</div>
+                        <ul class="resume-list education">
+                            <li ng-repeat="school in about.resume.education">
+                                <span class="resume-title"><strong>{{school.schoolName}}</strong></span><span class="date">{{school.dates}}</span><br />
+                                <span class="resumeSubHeader">{{school.degree}}</span><br />
+                                <span class="resume-description">{{school.description}}</span>
+                            </li>
+                        </ul>
+                        <div class="section-title">Experience</div>
+                        <ul class="resume-list experience">
+                            <li ng-repeat="job in about.resume.experience">
+                                <span class="resume-title"><strong>{{job.title}}</strong></span><span class="date">{{job.dates}}</span><br />
+                                <span class="resumeSubHeader">{{job.company}}</span><br />
+                                <span class="resume-description">{{job.description}}</span>
+                            </li>
+                        </ul>
+                        <div class="section-title">Leadership</div>
+                        <ul class="resume-list leadership">
+                            <li ng-repeat="role in about.resume.leadership">
+                                <span class="resume-title"><strong>{{role.name}}</strong></span><br />
+                                <span class="resumeSubHeader">{{role.description}}</span>
+                            </li>
+                        </ul>
+                        <div class="section-title">Skills</div>
+                        <ul class="resume-list skills">
+                            <li ng-repeat="skill in about.resume.skills">
+                                <span class="resume-title"><strong>{{skill.name}}: </strong>{{skill.proficiency}}</span>
+                            </li>
+                        </ul>
+                        <div class="section-title">Hobbies</div>
+                        <ul class="resume-list hobbies">
+                            <li ng-repeat="hobby in about.resume.hobbies">
+                                <span class="resume-title">{{hobby.name}}</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <hr />
-                <div class="h2-sara">Upvote and downvote my favorite foods below!</div>
-                <h2>Favorite Foods:</h2>
-                Order By:
-                <select ng-model="sortorder" class="input-small">
-                    <option selected value="name">Name</option>
-                    <option value="-upVoteCount">Votes</option>
-                </select>
-                <ul class="thumbnails">
-                    <li ng-repeat="food in about.favoriteFoods | orderBy:sortorder">
-                        <div class="votingButton" ng-click="upVoteFood(food)">
-                            <i class="icon-chevron-up icon-white"></i>
-                        </div>
-                        <div class="badge badge-inverse">
-                            <div>{{food.upVoteCount}}</div>
-                        </div>
-                        <div class="votingButton" ng-click="downVoteFood(food)">
-                            <i class="icon-chevron-down icon-white"></i>
-                        </div>
-                        <span>{{food.name}}</span><br />
-                        <span>{{food.tastiness | tastiness}}</span>
-                    </li>
-                </ul>
+                <!--<hr />-->
+                <!--<div class="h2-sara">Upvote and downvote my favorite foods below!</div>-->
+                <!--<h2>Favorite Foods:</h2>-->
+                <!--Order By:-->
+                <!--<select ng-model="sortorder" class="input-small">-->
+                    <!--<option selected value="name">Name</option>-->
+                    <!--<option value="-upVoteCount">Votes</option>-->
+                <!--</select>-->
+                <!--<ul class="thumbnails">-->
+                    <!--<li ng-repeat="food in about.favoriteFoods | orderBy:sortorder">-->
+                        <!--<div class="votingButton" ng-click="upVoteFood(food)">-->
+                            <!--<i class="icon-chevron-up icon-white"></i>-->
+                        <!--</div>-->
+                        <!--<div class="badge badge-inverse">-->
+                            <!--<div>{{food.upVoteCount}}</div>-->
+                        <!--</div>-->
+                        <!--<div class="votingButton" ng-click="downVoteFood(food)">-->
+                            <!--<i class="icon-chevron-down icon-white"></i>-->
+                        <!--</div>-->
+                        <!--<span>{{food.name}}</span><br />-->
+                        <!--<span>{{food.tastiness | tastiness}}</span>-->
+                    <!--</li>-->
+                <!--</ul>-->
             </div>
         </div><!--End ng-controller-->
+
         <div class="footer" ng-controller="FooterController">
             <div class="footer-inner">
-                <div class="map-widget">
-                    MAP
-                </div>
+                <!--<div class="map-widget">-->
+                <!--<iframe-->
+                <!--width="300"-->
+                <!--height="225"-->
+                <!--frameborder="0" style="border:0"-->
+                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
+                <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
+                <!--</iframe>-->
+                <!--</div>-->
                 <ul class="social">
                     <li class="social-link" ng-repeat="link in footer.social">
                         <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>

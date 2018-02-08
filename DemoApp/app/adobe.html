@@ -32,9 +32,14 @@
                 </div>
             </div>
 
-            <div class="body-wrapper-inner"> <!--THIS WOULD BE A GOOD PLACE TO USE NG SHOW AND HIDE!!!! -->
+            <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{adobe.intro}}</div>
-                <div class="photoshop">
+                <div class="switch">
+                    <span ng-click="togglePhotoshop()">PHOTOSHOP</span>
+                    <span ng-click="toggleIndesign()">INDESIGN</span>
+                    <span ng-click="toggleIllustrator()">ILLUSTRATOR</span>
+                </div>
+                <div class="photoshop" ng-show="showPhotoshop">
                     <div class="h2-sara">Photoshop</div>
                     <div class="adobe-intro">{{adobe.photoshop.intro}}</div>
                     <ul class="photoshop-content">
@@ -44,7 +49,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="inDesign">
+                <div class="inDesign" ng-show="showIndesign">
                     <div class="h2-sara">InDesign</div>
                     <div class="adobe-intro">{{adobe.inDesign.intro}}</div>
                     <ul class="photoshop-content">
@@ -54,7 +59,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="illustrator">
+                <div class="illustrator" ng-show="showIllustrator">
                     <div class="h2-sara">Illustrator</div>
                     <div class="adobe-intro">{{adobe.illustrator.intro}}</div>
                     <ul class="photoshop-content">
@@ -70,9 +75,15 @@
 
         <div class="footer" ng-controller="FooterController">
             <div class="footer-inner">
-                <div class="map-widget">
-                    MAP
-                </div>
+                <!--<div class="map-widget">-->
+                <!--<iframe-->
+                <!--width="300"-->
+                <!--height="225"-->
+                <!--frameborder="0" style="border:0"-->
+                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
+                <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
+                <!--</iframe>-->
+                <!--</div>-->
                 <ul class="social">
                     <li class="social-link" ng-repeat="link in footer.social">
                         <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>
