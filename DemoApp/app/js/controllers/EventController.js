@@ -10,7 +10,7 @@ eventsApp.controller('EventController',
             subsubheading: 'Digital Technology Leadership Program',
             date: 'February 6, 2018',
             location: 'San Francisco',
-            imageUrl: '/img/gallery/yousef-espanioly.jpg',
+            imageUrl: '/img/gallery/yousef-espanioly-smallest.jpg',
             address: {
                 street: '829 Filbert Street',
                 city: 'San Francisco',
