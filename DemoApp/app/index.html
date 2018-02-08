@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app="eventsApp">
+<head>
+    <meta charset="utf-8">
+    <title>Sara Cassella</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+</head>
+<body ng-cloak> <!--Hides this whole element until all of the angular has been parsed and processed OR if you keep your angular script tag in the head, angular will process sooner rather than later on page rendering lifecycle. -->
+    <div class="container-sara">
+        <div class="navbar-sara">
+            <div class="logo">LOGO</div>
+            <ul class="nav-sara">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">Resume</a></li>
+                <li><a href="/adobe.html">Adobe</a></li>
+                <li><a href="/userExperience.html">UX</a></li>
+                <li><a href="/webWork.html">Web</a></li>
+                <li><a href="/film.html">Film</a></li>
+                <li><a href="https://github.com/scassella" target="_blank">Git</a></li>
+                <li><a href="/contactPage.html">Contact</a></li>
+            </ul>
+        </div>
+        <div ng-controller="EventController" class="container-inner-sara">
+            <div class="header-wrapper">
+                <div class="header">
+                    <img ng-src="{{event.imageUrl}}" alt="Sara's Image"/><!-- use ng-src to delay the requesting of the image until angular has a chance to replace this with the actual url for the image.-->
+                </div>
+                <div class="header-info">
+                    <h1 class="title" ng-bind="event.title"></h1>
+                    <h2 class="subheading" ng-bind="event.subheading"></h2>
+                    <h2 class="subsubheading" ng-bind="event.subsubheading"></h2>
+                </div>
+            </div>
+            <div class="body-wrapper">
+                <!--{{event.name | uppercase}}<br />-->
+                <!--<div ng-bind-html="snippet">Some Title</div>-->
+                <!--<h2 ng-style="myStyle">I Styled This with Angular ng-style!</h2>-->
+                <div class="gallery">
+                    <div class="gallery-image" ng-repeat="img in event.gallery">
+                        <img ng-src="{{img.imageUrl}}"/>
+                    </div>
+                </div>
+            </div>
+        </div><!--End ng-controller-->
+        <div class="footer" ng-controller="FooterController">
+            <div class="footer-inner">
+                <!--<div class="map-widget">-->
+                    <!--<iframe-->
+                            <!--width="300"-->
+                            <!--height="225"-->
+                            <!--frameborder="0" style="border:0"-->
+                            <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
+    <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
+                    <!--</iframe>-->
+                <!--</div>-->
+                <ul class="social">
+                    <li class="social-link" ng-repeat="link in footer.social">
+                        <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Website built with Angular JS by Sara Cassella. 2018</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/underscore-1.4.4.min.js"></script>
+    <script src="/lib/bootstrap.min.js"></script>
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular/angular-sanitize.js"></script><!--This lets us use ng-bind-html and ng-bind-html-unsafe-->
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/EventController.js"></script>
+    <script src="/js/controllers/footerController.js"></script>
+    <script src="/js/filters/customFilter.js"></script>
+
+</body>
+</html>
