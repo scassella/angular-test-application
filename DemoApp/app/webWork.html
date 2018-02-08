@@ -34,14 +34,34 @@
 
             <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{webWork.intro}}</div>
+                <div class="switch">
+                    <span ng-click="togglePredix()">PREDIX.IO</span>
+                    <span ng-click="toggleMillerCenter()">MILLER CENTER</span>
+                    <span ng-click="toggleIeee()">IEEE</span>
+                    <span ng-click="togglePowerPlaylist()">POWER PLAYLIST</span>
+                </div>
+
+                <div class="web-projects">
+                    <div ng-show="showPredix" class="project">
+                        <div class="project-title"><a href="{{}}">Predix.io</a></div>
+
+
+                    </div>
+                </div>
             </div>
         </div><!--End ng-controller-->
 
         <div class="footer" ng-controller="FooterController">
             <div class="footer-inner">
-                <div class="map-widget">
-                    MAP
-                </div>
+                <!--<div class="map-widget">-->
+                <!--<iframe-->
+                <!--width="300"-->
+                <!--height="225"-->
+                <!--frameborder="0" style="border:0"-->
+                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
+                <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
+                <!--</iframe>-->
+                <!--</div>-->
                 <ul class="social">
                     <li class="social-link" ng-repeat="link in footer.social">
                         <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>

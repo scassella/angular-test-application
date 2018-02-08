@@ -3,6 +3,26 @@
 eventsApp.controller('AdobeController',
     function AdobeController($scope) {
 
+        $scope.showPhotoshop = true;
+        $scope.showIndesign = false;
+        $scope.showIllustrator = false;
+
+        $scope.togglePhotoshop = function() {
+            $scope.showPhotoshop = true;
+            $scope.showIndesign = false;
+            $scope.showIllustrator = false;
+        };
+        $scope.toggleIndesign = function() {
+            $scope.showPhotoshop = false;
+            $scope.showIndesign = true;
+            $scope.showIllustrator = false;
+        };
+        $scope.toggleIllustrator = function() {
+            $scope.showPhotoshop = false;
+            $scope.showIndesign = false;
+            $scope.showIllustrator = true;
+        };
+
         $scope.adobe = {
             title: 'Adobe Creative Suite',
             imageUrl: '/img/gallery/aaron-burden.jpg',

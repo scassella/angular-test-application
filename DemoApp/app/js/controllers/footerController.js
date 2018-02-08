@@ -5,25 +5,25 @@ eventsApp.controller('FooterController',
 
         $scope.footer = {
             social: [
-                {
-                    name: 'facebook',
-                    image: '/img/icons/facebook.png',
-                    url: ''
-                },
+                // {
+                //     name: 'facebook',
+                //     image: '/img/icons/facebook.png',
+                //     url: ''
+                // },
                 {
                     name: 'Github',
                     image: '/img/icons/github.svg',
-                    url: ''
+                    url: 'https://github.com/scassella'
                 },
                 {
                     name: 'Instagram',
                     image: '/img/icons/instagram.png',
-                    url: ''
+                    url: 'www.instagram.com/scassella'
                 },
                 {
                     name: 'LinkedIn',
                     image: '/img/icons/linkedIn.png',
-                    url: ''
+                    url: 'https://www.linkedin.com/in/sara-cassella/'
                 }
             ]
         }

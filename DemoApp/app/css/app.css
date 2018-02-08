@@ -4,6 +4,14 @@ body {
     font-family: Helvetica;
 }
 
+a:hover {
+    color: teal;
+}
+
+a:active {
+    color: teal;
+}
+
 .h2-sara {
     margin: 20px;
     text-align: center;
@@ -236,6 +244,38 @@ hr {
     color: darkgray;
 }
 
+.resume {
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.resume-body {
+    width: 800px;
+    margin: auto;
+    text-align: left;
+    padding: 20px 70px;
+    background-color: lightgrey;
+}
+
+.section-title {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.resume-title {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.date {
+    float: right;
+}
+
+.resume-list {
+    list-style: none;
+}
+
 .adobe-intro {
     color: black;
     text-align: center;
@@ -244,6 +284,17 @@ hr {
     font-size: 1.2rem;
     line-height: 2.5rem;
     font-weight: 100;
+}
+
+.switch {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.adobe-switch span {
+    margin: 0 10px;
+    padding: 0 20px;
 }
 
 .photoshop-content {
