@@ -4,12 +4,8 @@ eventsApp.controller('FooterController',
     function FooterController($scope) {
 
         $scope.footer = {
+            copyright: 'Website built with Angular JS by Sara Cassella. 2018',
             social: [
-                // {
-                //     name: 'facebook',
-                //     image: '/img/icons/facebook.png',
-                //     url: ''
-                // },
                 {
                     name: 'Github',
                     image: '/img/icons/github.svg',

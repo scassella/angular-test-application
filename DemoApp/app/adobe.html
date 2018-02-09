@@ -2,24 +2,16 @@
 <html lang="en" ng-app="eventsApp">
 <head>
     <meta charset="utf-8">
-    <title>Sara Cassella</title>
+    <title>SC - ADOBE</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/app.css"/>
 </head>
-<body ng-cloak> <!--Hides this whole element until all of the angular has been parsed and processed OR if you keep your angular script tag in the head, angular will process sooner rather than later on page rendering lifecycle. -->
+<body ng-cloak>
     <div class="container-sara">
-        <div class="navbar-sara">
-            <div class="logo">SC</div>
+        <div class="navbar-sara" ng-controller="NavController">
+            <div class="logo">{{logo}}</div>
             <ul class="nav-sara">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/resume.html">Resume</a></li>
-                <li><a href="/adobe.html">Adobe</a></li>
-                <li><a href="/userExperience.html">UX</a></li>
-                <li><a href="/webWork.html">Web</a></li>
-                <li><a href="/film.html">Film</a></li>
-                <li><a href="https://github.com/scassella" target="_blank">Git</a></li>
-                <li><a href="/contactPage.html">Contact</a></li>
+                <li ng-repeat="tab in nav"><a href="{{tab.href}}" target="{{tab.target}}">{{tab.name | uppercase}}</a></li>
             </ul>
         </div>
 
@@ -52,7 +44,7 @@
             <div class="footer-sara adobe-footer">
                 <div class="footer-overlay">
                     <div class="copyright">
-                        <p>Website built with Angular JS by Sara Cassella. 2018</p>
+                        <p>{{footer.copyright}}</p>
                     </div>
                     <ul class="social">
                         <li class="social-link" ng-repeat="link in footer.social">
@@ -70,6 +62,7 @@
     <script src="/lib/angular/angular.js"></script>
     <script src="/lib/angular/angular-sanitize.js"></script><!--This lets us use ng-bind-html and ng-bind-html-unsafe-->
     <script src="/js/app.js"></script>
+    <script src="/js/controllers/navController.js"></script>
     <script src="/js/controllers/adobeController.js"></script>
     <script src="/js/controllers/footerController.js"></script>
     <script src="/js/filters/customFilter.js"></script>

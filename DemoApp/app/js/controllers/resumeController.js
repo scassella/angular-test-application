@@ -116,26 +116,6 @@ eventsApp.controller('ResumeController',
                         name: 'Boxing'
                     }
                 ]
-            },
-            favoriteFoods: [
-                {   name: 'Annies Mac & Cheese',
-                    tastiness: 3,
-                    upVoteCount: 0
-                },
-                {   name: 'Trader Joes Cheddar Sandwiches',
-                    tastiness: 1,
-                    upVoteCount: 0
-                },
-                {   name: 'buratta on toast with honey',
-                    tastiness: 2,
-                    upVoteCount: 0
-                }
-            ],
-            address: {
-                street: '829 Filbert Street',
-                city: 'San Francisco',
-                state: 'California',
-                zip: '94133'
             }
         };
     }
