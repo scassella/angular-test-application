@@ -37,7 +37,7 @@
                 <div class="inner-subheader" ng-style="subheaderStyle">{{contact.intro}}</div>
                 <div class="contact-wrapper">
                     <div class="address-wrapper">
-                        <span class="contact-header">Current Address:</span><br />
+                        <span class="contact-header">Address:</span><br />
                         <div class="address">
                             {{contact.address.street}}<br />
                             {{contact.address.city}},<br />
@@ -55,18 +55,16 @@
                                 <label class="label-sara" for="name">Name:</label>
                                 <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/>
                                 <label class="label-sara" for="date">Date:</label>
-                                <input id="date" type="text" required ng-pattern="/\d\d/\d\d/\d\d/" ng-model="contact.date" placeholder="Your Date (mm/dd/yy)"/>
+                                <input id="date" type="text" required ng-pattern="/\d\d/\d\d/\d\d/" ng-model="contact.date" placeholder="Today's Date (mm/dd/yy)"/>
                                 <label class="label-sara" for="email">Email:</label>
-                                <input id="email" type="text" required ng-model="contact.email" placeholder="Your Email"/>
+                                <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/>
                                 <label class="label-sara" for="message">Message:</label>
                                 <input id="message" type="text" required ng-model="contact.message" placeholder="Your Message"/>
-                                <br />
-                                <input id="city" type="text" class="input-small" ng-model="contact.city" placeholder="city...."/>
 
                                 <label class="label-sara" for="imageUrl">Image: (Try out some two way Angular
                                                                          Binding, and see your
                                 image below!)</label>
-                                <input id="imageUrl" type="url" required class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
+                                <input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
 
                             </fieldset>
                             <br />

@@ -32,12 +32,20 @@ eventsApp.controller('ContactController',
         $scope.sendEmail = function(contact, contactForm) {
             console.log('FORM DATA: ', contactForm);
             if (contactForm.$valid) {
-                window.alert('sent an email to me! Thanks, ' + contact.email);
+                const emailTemplate = {
+                    name: contactForm.$$success.required[0].$viewValue,
+                    date: contactForm.$$success.required[1].$viewValue,
+                    email: contactForm.$$success.required[2].$viewValue,
+                    message: contactForm.$$success.required[3].$viewValue
+                };
+                const formattedBody = "Hi Sara, I am reaching out to you from your website, saracassella.com. \n My" +
+                    " name is " + contactForm.$$success.required[0].$viewValue + ", and the date is " + contactForm.$$success.required[1].$viewValue + ". Here is my message: \n" + contactForm.$$success.required[3].$viewValue + '\n You can reach me at ' + contactForm.$$success.required[2].$viewValue + ". \n Thanks!";
+                window.location.href = "mailto:saracassella@gmail.com?body=" + encodeURIComponent(formattedBody);
             }
         };
 
         $scope.cancelThis = function () {
-            window.location = "/EventDetails.html";
+            window.location = "/index.html";
         };
 
         $scope.subheaderStyle = function () {
