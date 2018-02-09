@@ -9,7 +9,7 @@
 <body ng-cloak> <!--Hides this whole element until all of the angular has been parsed and processed OR if you keep your angular script tag in the head, angular will process sooner rather than later on page rendering lifecycle. -->
     <div class="container-sara">
         <div class="navbar-sara">
-            <div class="logo">LOGO</div>
+            <div class="logo">SC</div>
             <ul class="nav-sara">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
@@ -35,46 +35,19 @@
 
             <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{adobe.intro}}</div>
-                <!--<div class="switch">-->
-                    <!--<span ng-click="togglePhotoshop()">PHOTOSHOP</span>-->
-                    <!--<span ng-click="toggleIndesign()">INDESIGN</span>-->
-                    <!--<span ng-click="toggleIllustrator()">ILLUSTRATOR</span>-->
-                <!--</div>-->
                 <div class="thumbnails-sara">
-                    <div class="photoshop adobe-thumbnail" ng-show="showPhotoshop">
-                        <div class="h2-sara">Photoshop</div>
-                        <div class="adobe-intro">{{adobe.photoshop.intro}}</div>
-                        <ul class="photoshop-content">
-                            <li  ng-repeat="photo in adobe.photoshop.photos">
-                                <span class="adobe-label"><strong>{{photo.name}}:</strong> {{photo.description}}</span><br />
-                                <img ng-src="{{photo.imageUrl}}" alt="Photoshop Image"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="inDesign adobe-thumbnail" ng-show="showIndesign">
-                        <div class="h2-sara">InDesign</div>
-                        <div class="adobe-intro">{{adobe.inDesign.intro}}</div>
-                        <ul class="photoshop-content">
-                            <li  ng-repeat="project in adobe.inDesign.projects">
-                            <span class="adobe-label"><strong>{{project.name}}</strong><br />
-                                {{project.description}}</span><br />
-                            </li>
-                        </ul>
-                    </div>
                     <div class="illustrator adobe-thumbnail" ng-show="showIllustrator">
-                        <div class="h2-sara">Illustrator</div>
-                        <div class="adobe-intro">{{adobe.illustrator.intro}}</div>
-                        <ul class="photoshop-content">
-                            <li  ng-repeat="project in adobe.illustrator.projects">
-                            <span class="adobe-label"><strong>{{project.name}}</strong><br />
-                                {{project.description}}</span><br />
-                                <!--<img ng-src="{{project.photos}}" alt="illustrator Image"/>-->
+                        <ul class="adobe-content">
+                            <li  ng-repeat="project in adobe.images">
+                                <span><a href="{{project.pdf}}" download="saraCassellaAdobe"><strong>{{project.name}}</strong> {{project.type}}</a></span>
+                                <img ng-src="{{project.url}}" alt="Adobe"/>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div><!--End ng-controller-->
+
         <div ng-controller="FooterController">
             <div class="footer-sara adobe-footer">
                 <div class="footer-overlay">

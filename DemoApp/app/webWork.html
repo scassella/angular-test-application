@@ -9,7 +9,7 @@
 <body ng-cloak> <!--Hides this whole element until all of the angular has been parsed and processed OR if you keep your angular script tag in the head, angular will process sooner rather than later on page rendering lifecycle. -->
     <div class="container-sara">
         <div class="navbar-sara">
-            <div class="logo">LOGO</div>
+            <div class="logo">SC</div>
             <ul class="nav-sara">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
@@ -35,29 +35,15 @@
 
             <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{webWork.intro}}</div>
-                <!--<div class="switch">-->
-                    <!--<span ng-click="togglePredix()">PREDIX.IO</span>-->
-                    <!--<span ng-click="toggleMillerCenter()">MILLER CENTER</span>-->
-                    <!--<span ng-click="toggleIeee()">IEEE</span>-->
-                    <!--<span ng-click="togglePowerPlaylist()">POWER PLAYLIST</span>-->
-                <!--</div>-->
-
-                <div class="web-projects">
-                    <ul>
-                        <li ng-repeat="project in webWork.projects">
-                            <span><strong><a href="{{project.url}}" target="_blank">{{project.name}}</a></strong></span>
-                            <br />
-                            <span>{{project.description}}</span>
-                        </li>
-                    </ul>
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!--<div ng-show="showPredix" class="project">-->
-                        <!--<div class="project-title"><a href="{{webWork.projects}}">Predix.io</a></div>-->
-
-
-                    <!--</div>-->
+                <div class="thumbnails-sara">
+                    <div class="illustrator adobe-thumbnail">
+                        <ul class="adobe-content">
+                            <li  ng-repeat="project in webWork.images">
+                                <span><a href="{{project.url}}"><strong>{{project.name}}</strong> {{project.type}}</a></span>
+                                <img ng-src="{{project.image}}" alt="WebWork"/>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div><!--End ng-controller-->

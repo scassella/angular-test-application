@@ -250,7 +250,7 @@ hr {
 .resume {
     text-align: center;
     color: black;
-    margin: 40px 40px;
+    margin: 40px 40px 80px 40px;
 }
 
 .resume-body {
@@ -308,26 +308,36 @@ hr {
 }
 
 .thumbnails-sara {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
 .adobe-thumbnail {
     margin: 0 30px;
-    max-width: 350px;
 }
 
-.photoshop-content {
+.adobe-content {
     list-style: none;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
-.photoshop-content li {
-    margin: 20px;
+.adobe-content li {
+    min-width: 300px;
+    max-width: 400px;
+    margin: 20px 20px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.adobe-content li:hover {
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .adobe-label {
@@ -443,7 +453,7 @@ hr {
 }
 
 .about-footer {
-    background-image: url('../img/gallery/james-donaldson-smallest.jpg');
+    background-image: url('../img/gallery/willian-justen-de-vasconcellos.jpg');
 }
 
 .resume-footer {

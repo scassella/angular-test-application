@@ -73,7 +73,34 @@ eventsApp.controller('WebWorkController',
 
                     ]
                 }
+            ],
+            images: [
+                {
+                    name: 'Power Playlist',
+                    url: 'https://github.com/apolatnick/Power-Playlist',
+                    image: '/img/webWork/PowerPlaylist.png'
+                },
+                {
+                    name: 'Predix.io',
+                    url: 'www.predix.io',
+                    image: '/img/webWork/PredixIo.png'
+                },
+                {
+                    name: 'Predix Console',
+                    url: 'www.predix.io',
+                    image: '/img/webWork/PredixConsole.png'
+                },
+                {
+                    name: 'Miller Center',
+                    url: 'https://www.scu-social-entrepreneurship.org/#home',
+                    image: '/img/webWork/PowerPlaylist.png'
+                },
+                {
+                    name: 'IEEE WCNC 2017',
+                    url: 'http://wcnc2017.ieee-wcnc.org/',
+                    image: '/img/webWork/WCNC.png'
+                }
             ]
-        };
+        }
     }
 );
