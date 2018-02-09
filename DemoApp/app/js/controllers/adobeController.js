@@ -58,7 +58,11 @@ eventsApp.controller('AdobeController',
                 ]
             },
             inDesign: {
-                intro: '',
+                intro: 'During my internship at Miller Center for Social Entrepreneurship I used Adobe InDesign to' +
+                ' create their Annual Report and other booklet marketing materials. For the Annual report, I worked' +
+                ' with a copywriter for 4 months, and designed the layout personally. The booklet for the GE' +
+                ' healthymagiation Conference in Nairobi was created for a Miller Center conference in partnership' +
+                ' with GE.',
                 projects: [
                     {   name: 'Annual Report for Miller Center for Social Entrepreneurship',
                         description: 'For Miller Center for Social Entrepreneurship, I used Adobe InDesign to create their Annual Report for 2016.'
@@ -69,17 +73,20 @@ eventsApp.controller('AdobeController',
                 ]
             },
             illustrator: {
-                intro: '',
+                intro: 'I have a lot of experience with Adobe Illustrator through my internships and through my' +
+                ' classwork at Santa Clara University. Since graduating, I also use Illustrator to make infographics' +
+                ' for the Feedback Committee that I am the lead of for the DTLP program at GE. The two examples' +
+                ' below are both from my coursework at Santa Clara University.',
                 projects: [
-                    {   name: '',
-                        description: '',
+                    {   name: 'Earth Day Brochure',
+                        description: '...',
                         photos: [
                             {   imageUrl: '' },
                             {   imageUrl: '' }
                         ]
                     },
-                    {   name: '',
-                        description: '',
+                    {   name: 'Infographic and Poster Design',
+                        description: '...',
                         photos: [
                             {   imageUrl: '' },
                             {   imageUrl: '' }
