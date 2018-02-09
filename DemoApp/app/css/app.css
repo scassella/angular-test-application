@@ -374,8 +374,9 @@ hr {
 }
 
 .gallery-image {
-    min-width: 300px;
-    flex-grow: 1;
+    max-width: 340px;
+    /*min-width: 300px;*/
+    /*flex-grow: 1;*/
     opacity: 1;
     transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
