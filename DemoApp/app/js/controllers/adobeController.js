@@ -3,9 +3,9 @@
 eventsApp.controller('AdobeController',
     function AdobeController($scope) {
 
-        $scope.showPhotoshop = false;
-        $scope.showIndesign = false;
-        $scope.showIllustrator = false;
+        $scope.showPhotoshop = true;
+        $scope.showIndesign = true;
+        $scope.showIllustrator = true;
 
         $scope.togglePhotoshop = function() {
             $scope.showPhotoshop = true;

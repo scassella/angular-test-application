@@ -12,7 +12,8 @@
             <div class="logo">LOGO</div>
             <ul class="nav-sara">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">Resume</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/resume.html">Resume</a></li>
                 <li><a href="/adobe.html">Adobe</a></li>
                 <li><a href="/userExperience.html">UX</a></li>
                 <li><a href="/webWork.html">Web</a></li>
@@ -33,48 +34,6 @@
 
             <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{about.intro}}</div>
-                <hr />
-                <div class="resume">
-                    <p><a href="{{about.resumeUrl}}" download="saraCassellaResume">Download the pdf</a></p>
-                    <div class="resume-body">
-                        <div class="section-title">Education</div>
-                        <ul class="resume-list education">
-                            <li ng-repeat="school in about.resume.education">
-                                <span class="resume-title"><strong>{{school.schoolName}}</strong></span><span class="date">{{school.dates}}</span><br />
-                                <span class="resumeSubHeader">{{school.degree}}</span><br />
-                                <span class="resume-description">{{school.description}}</span>
-                            </li>
-                        </ul>
-                        <div class="section-title">Experience</div>
-                        <ul class="resume-list experience">
-                            <li ng-repeat="job in about.resume.experience">
-                                <span class="resume-title"><strong>{{job.title}}</strong></span><span class="date">{{job.dates}}</span><br />
-                                <span class="resumeSubHeader">{{job.company}}</span><br />
-                                <span class="resume-description">{{job.description}}</span>
-                            </li>
-                        </ul>
-                        <div class="section-title">Leadership</div>
-                        <ul class="resume-list leadership">
-                            <li ng-repeat="role in about.resume.leadership">
-                                <span class="resume-title"><strong>{{role.name}}</strong></span><br />
-                                <span class="resumeSubHeader">{{role.description}}</span>
-                            </li>
-                        </ul>
-                        <div class="section-title">Skills</div>
-                        <ul class="resume-list skills">
-                            <li ng-repeat="skill in about.resume.skills">
-                                <span class="resume-title"><strong>{{skill.name}}: </strong>{{skill.proficiency}}</span>
-                            </li>
-                        </ul>
-                        <div class="section-title">Hobbies</div>
-                        <ul class="resume-list hobbies">
-                            <li ng-repeat="hobby in about.resume.hobbies">
-                                <span class="resume-title">{{hobby.name}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--<hr />-->
                 <!--<div class="h2-sara">Upvote and downvote my favorite foods below!</div>-->
                 <!--<h2>Favorite Foods:</h2>-->
                 <!--Order By:-->
@@ -99,26 +58,18 @@
                 <!--</ul>-->
             </div>
         </div><!--End ng-controller-->
-
-        <div class="footer" ng-controller="FooterController">
-            <div class="footer-inner">
-                <!--<div class="map-widget">-->
-                <!--<iframe-->
-                <!--width="300"-->
-                <!--height="225"-->
-                <!--frameborder="0" style="border:0"-->
-                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
-                <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
-                <!--</iframe>-->
-                <!--</div>-->
+    </div>
+    <div ng-controller="FooterController">
+        <div class="footer-sara about-footer">
+            <div class="footer-overlay">
+                <div class="copyright">
+                    <p>Website built with Angular JS by Sara Cassella. 2018</p>
+                </div>
                 <ul class="social">
                     <li class="social-link" ng-repeat="link in footer.social">
                         <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
                     </li>
                 </ul>
-            </div>
-            <div class="copyright">
-                <p>Website built with Angular JS by Sara Cassella. 2018</p>
             </div>
         </div>
     </div>

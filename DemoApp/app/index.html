@@ -12,7 +12,8 @@
             <div class="logo">LOGO</div>
             <ul class="nav-sara">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">Resume</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/resume.html">Resume</a></li>
                 <li><a href="/adobe.html">Adobe</a></li>
                 <li><a href="/userExperience.html">UX</a></li>
                 <li><a href="/webWork.html">Web</a></li>
@@ -32,6 +33,7 @@
                     <h2 class="subsubheading" ng-bind="event.subsubheading"></h2>
                 </div>
             </div>
+
             <div class="body-wrapper">
                 <!--{{event.name | uppercase}}<br />-->
                 <!--<div ng-bind-html="snippet">Some Title</div>-->
@@ -43,25 +45,19 @@
                 </div>
             </div>
         </div><!--End ng-controller-->
-        <div class="footer" ng-controller="FooterController">
-            <div class="footer-inner">
-                <!--<div class="map-widget">-->
-                    <!--<iframe-->
-                            <!--width="300"-->
-                            <!--height="225"-->
-                            <!--frameborder="0" style="border:0"-->
-                            <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
-    <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
-                    <!--</iframe>-->
-                <!--</div>-->
-                <ul class="social">
-                    <li class="social-link" ng-repeat="link in footer.social">
-                        <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>Website built with Angular JS by Sara Cassella. 2018</p>
+
+        <div ng-controller="FooterController">
+            <div class="footer-sara index-footer">
+                <div class="footer-overlay">
+                    <div class="copyright">
+                        <p>Website built with Angular JS by Sara Cassella. 2018</p>
+                    </div>
+                    <ul class="social">
+                        <li class="social-link" ng-repeat="link in footer.social">
+                            <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

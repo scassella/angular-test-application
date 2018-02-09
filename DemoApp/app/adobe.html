@@ -12,7 +12,8 @@
             <div class="logo">LOGO</div>
             <ul class="nav-sara">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">Resume</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/resume.html">Resume</a></li>
                 <li><a href="/adobe.html">Adobe</a></li>
                 <li><a href="/userExperience.html">UX</a></li>
                 <li><a href="/webWork.html">Web</a></li>
@@ -34,64 +35,58 @@
 
             <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{adobe.intro}}</div>
-                <div class="switch">
-                    <span ng-click="togglePhotoshop()">PHOTOSHOP</span>
-                    <span ng-click="toggleIndesign()">INDESIGN</span>
-                    <span ng-click="toggleIllustrator()">ILLUSTRATOR</span>
-                </div>
-                <div class="photoshop" ng-show="showPhotoshop">
-                    <div class="h2-sara">Photoshop</div>
-                    <div class="adobe-intro">{{adobe.photoshop.intro}}</div>
-                    <ul class="photoshop-content">
-                        <li  ng-repeat="photo in adobe.photoshop.photos">
-                            <span class="adobe-label"><strong>{{photo.name}}:</strong> {{photo.description}}</span><br />
-                            <img ng-src="{{photo.imageUrl}}" alt="Photoshop Image"/>
-                        </li>
-                    </ul>
-                </div>
-                <div class="inDesign" ng-show="showIndesign">
-                    <div class="h2-sara">InDesign</div>
-                    <div class="adobe-intro">{{adobe.inDesign.intro}}</div>
-                    <ul class="photoshop-content">
-                        <li  ng-repeat="project in adobe.inDesign.projects">
+                <!--<div class="switch">-->
+                    <!--<span ng-click="togglePhotoshop()">PHOTOSHOP</span>-->
+                    <!--<span ng-click="toggleIndesign()">INDESIGN</span>-->
+                    <!--<span ng-click="toggleIllustrator()">ILLUSTRATOR</span>-->
+                <!--</div>-->
+                <div class="thumbnails-sara">
+                    <div class="photoshop adobe-thumbnail" ng-show="showPhotoshop">
+                        <div class="h2-sara">Photoshop</div>
+                        <div class="adobe-intro">{{adobe.photoshop.intro}}</div>
+                        <ul class="photoshop-content">
+                            <li  ng-repeat="photo in adobe.photoshop.photos">
+                                <span class="adobe-label"><strong>{{photo.name}}:</strong> {{photo.description}}</span><br />
+                                <img ng-src="{{photo.imageUrl}}" alt="Photoshop Image"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inDesign adobe-thumbnail" ng-show="showIndesign">
+                        <div class="h2-sara">InDesign</div>
+                        <div class="adobe-intro">{{adobe.inDesign.intro}}</div>
+                        <ul class="photoshop-content">
+                            <li  ng-repeat="project in adobe.inDesign.projects">
                             <span class="adobe-label"><strong>{{project.name}}</strong><br />
                                 {{project.description}}</span><br />
-                        </li>
-                    </ul>
-                </div>
-                <div class="illustrator" ng-show="showIllustrator">
-                    <div class="h2-sara">Illustrator</div>
-                    <div class="adobe-intro">{{adobe.illustrator.intro}}</div>
-                    <ul class="photoshop-content">
-                        <li  ng-repeat="project in adobe.illustrator.projects">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="illustrator adobe-thumbnail" ng-show="showIllustrator">
+                        <div class="h2-sara">Illustrator</div>
+                        <div class="adobe-intro">{{adobe.illustrator.intro}}</div>
+                        <ul class="photoshop-content">
+                            <li  ng-repeat="project in adobe.illustrator.projects">
                             <span class="adobe-label"><strong>{{project.name}}</strong><br />
                                 {{project.description}}</span><br />
-                            <!--<img ng-src="{{project.photos}}" alt="illustrator Image"/>-->
-                        </li>
-                    </ul>
+                                <!--<img ng-src="{{project.photos}}" alt="illustrator Image"/>-->
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div><!--End ng-controller-->
-
-        <div class="footer" ng-controller="FooterController">
-            <div class="footer-inner">
-                <!--<div class="map-widget">-->
-                <!--<iframe-->
-                <!--width="300"-->
-                <!--height="225"-->
-                <!--frameborder="0" style="border:0"-->
-                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
-                <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
-                <!--</iframe>-->
-                <!--</div>-->
-                <ul class="social">
-                    <li class="social-link" ng-repeat="link in footer.social">
-                        <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>Website built with Angular JS by Sara Cassella. 2018</p>
+        <div ng-controller="FooterController">
+            <div class="footer-sara adobe-footer">
+                <div class="footer-overlay">
+                    <div class="copyright">
+                        <p>Website built with Angular JS by Sara Cassella. 2018</p>
+                    </div>
+                    <ul class="social">
+                        <li class="social-link" ng-repeat="link in footer.social">
+                            <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

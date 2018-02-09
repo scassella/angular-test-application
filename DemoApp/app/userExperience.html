@@ -37,26 +37,18 @@
                 <p><a href="{{userExperience.url}}" download="saraCassellaUXEvaluation">Download the pdf</a></p>
             </div>
         </div><!--End ng-controller-->
-
-        <div class="footer" ng-controller="FooterController">
-            <div class="footer-inner">
-                <!--<div class="map-widget">-->
-                <!--<iframe-->
-                <!--width="300"-->
-                <!--height="225"-->
-                <!--frameborder="0" style="border:0"-->
-                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCjqnHIkRf6b-H3Vn65QQEz7nWzDFAh3k-->
-                <!--&q=Embarcadero+2,San+Francisco+CA" allowfullscreen>-->
-                <!--</iframe>-->
-                <!--</div>-->
+    </div>
+    <div ng-controller="FooterController">
+        <div class="footer-sara ux-footer">
+            <div class="footer-overlay">
+                <div class="copyright">
+                    <p>Website built with Angular JS by Sara Cassella. 2018</p>
+                </div>
                 <ul class="social">
                     <li class="social-link" ng-repeat="link in footer.social">
-                        <a href="{{link.url}}"><img ng-src="{{link.image}}"/></a>
+                        <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
                     </li>
                 </ul>
-            </div>
-            <div class="copyright">
-                <p>Website built with Angular JS by Sara Cassella. 2018</p>
             </div>
         </div>
     </div>

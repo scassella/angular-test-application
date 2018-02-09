@@ -18,26 +18,22 @@ eventsApp.controller('EventController',
                 zip: '94133'
             },
             gallery: [
-                {   imageUrl: '/img/gallery/alex-povolyashko.jpg' },
-                {   imageUrl: '/img/gallery/justin-bisson-beck.jpg' },
-                {   imageUrl: '/img/gallery/scott-webb.jpg' },
-                {   imageUrl: '/img/gallery/sherman-yang.jpg' },
-                {   imageUrl: '/img/gallery/spencer-watson.jpg' },
-                {   imageUrl: '/img/gallery/vashishtha-jogi.jpg' }
-            ],
-            references: [
-                {   name: '',
-                    url: ''
-                },
-                {   name: '',
-                    url: ''
-                },
-                {   name: '',
-                    url: ''
-                },
-                {   name: '',
-                    url: ''
-                }
+                {   imageUrl: '/img/gallery/gallery1.jpeg' },
+                {   imageUrl: '/img/gallery/gallery2.jpeg' },
+                {   imageUrl: '/img/gallery/gallery3.jpeg' },
+                {   imageUrl: '/img/gallery/gallery4.jpeg' },
+                {   imageUrl: '/img/gallery/gallery5.jpeg' },
+                {   imageUrl: '/img/gallery/gallery6.jpeg' },
+                {   imageUrl: '/img/gallery/gallery7.jpeg' },
+                {   imageUrl: '/img/gallery/gallery8.jpeg' },
+                {   imageUrl: '/img/gallery/gallery9.jpeg' },
+                {   imageUrl: '/img/gallery/gallery10.jpeg' },
+                {   imageUrl: '/img/gallery/gallery11.jpeg' },
+                {   imageUrl: '/img/gallery/gallery12.jpeg' },
+                {   imageUrl: '/img/gallery/gallery13.jpeg' },
+                {   imageUrl: '/img/gallery/gallery14.jpeg' },
+                {   imageUrl: '/img/gallery/gallery15.jpeg' },
+                {   imageUrl: '/img/gallery/gallery17.jpeg' }
             ],
             social: [
                 {   name: 'facebook',

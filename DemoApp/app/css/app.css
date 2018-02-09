@@ -104,6 +104,8 @@ select, textarea {
     width: 100%;
     margin: auto;
     height: 100%;
+    min-height: 100%;
+    position: relative;
 }
 
 .navbar-sara {
@@ -144,6 +146,9 @@ a {
 .container-inner-sara {
     width: 100%;
     background-color: whitesmoke;
+    position: relative;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
 .header-wrapper {
@@ -220,14 +225,12 @@ a {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    min-height: 800px;
 }
 
 .body-wrapper-inner {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    min-height: 800px;
 }
 
 .inner-subheader {
@@ -247,7 +250,7 @@ hr {
 .resume {
     text-align: center;
     color: black;
-    margin-bottom: 40px;
+    margin: 40px 40px;
 }
 
 .resume-body {
@@ -304,6 +307,18 @@ hr {
     cursor: pointer;
 }
 
+.thumbnails-sara {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adobe-thumbnail {
+    margin: 0 30px;
+    max-width: 350px;
+}
+
 .photoshop-content {
     list-style: none;
     text-align: center;
@@ -321,18 +336,24 @@ hr {
 
 .video-wrapper {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .contact-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .contact-header {
     padding: 20px;
     font-size: 2rem;
     font-weight: 400;
+}
+
+.me {
+    max-width: 500px;
 }
 
 .address-wrapper {
@@ -365,7 +386,7 @@ hr {
 
 .gallery {
     width: 90%;
-    margin: 10px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -388,28 +409,99 @@ hr {
     -webkit-transition: opacity 0.5s ease-in-out;
 }
 
-.footer {
-    height: 350px;
-    background-color: teal;
+/*.footer {*/
+    /*height: 350px;*/
+    /*background-color: teal;*/
+    /*opacity: 0.5;*/
+/*}*/
+
+/*.footer-inner {*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*height: 310px;*/
+/*}*/
+
+/*.map-widget {*/
+    /*opacity: 1;*/
+    /*margin: 20px;*/
+    /*padding: 10px;*/
+/*}*/
+
+.footer-sara {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    margin: 0;
+}
+
+.index-footer {
+    background-image: url('../img/gallery/yousef-espanioly-smallest.jpg');
+}
+
+.about-footer {
+    background-image: url('../img/gallery/james-donaldson-smallest.jpg');
+}
+
+.resume-footer {
+    background-image: url('../img/gallery/james-donaldson-smallest.jpg');
+}
+
+.adobe-footer {
+    background-image: url('../img/gallery/aaron-burden-smallest.jpg');
+}
+
+.ux-footer {
+    background-image: url('../img/gallery/chris-holgersson-smallest.jpg');
+}
+
+.web-footer {
+    background-image: url('../img/gallery/spencer-watson-smallest.jpg');
+}
+
+.film-footer {
+    background-image: url('../img/gallery/jakob-owens-smallest.jpg');
+}
+
+.contact-footer {
+    background-image: url('../img/gallery/larm-rmah-smallest.jpg');
+}
+
+.footer-overlay {
+    margin: 0;
+    padding: 0;
+    background-color: white;
     opacity: 0.5;
-}
-
-.footer-inner {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    height: 310px;
 }
 
-.map-widget {
-    opacity: 1;
-    margin: 20px;
-    padding: 10px;
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.copyright p {
+    padding-top: 10px;
+    color: black;
+    text-align: left;
+    flex-grow: 1;
 }
 
 .social {
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
+    flex-grow: 1;
+    padding: 0 20px;
+    margin: 0;
 }
 
 .social-link {
@@ -418,24 +510,9 @@ hr {
 }
 
 .social-link a {
-    max-width: 40px;
-}
-
-.copyright {
-    background-color: white;
-    color: gray;
-    position: absolute;
-    height: 40px;
-    width: 100%;
-    text-align: center;
     margin: 0;
-    z-index: 999;
-}
-
-.copyright p {
-    z-index: 1000;
-    padding-top: 10px;
-    color: black;
+    padding: 5px 5px;
+    max-width: 30px;
 }
 
 /*@media (min-width: 769px) {*/
