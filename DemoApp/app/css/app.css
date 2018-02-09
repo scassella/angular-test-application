@@ -290,12 +290,18 @@ hr {
 .switch {
     text-align: center;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin: 0 0 50px 0;
+    color: black;
 }
 
-.adobe-switch span {
+.switch span {
     margin: 0 10px;
-    padding: 0 20px;
+    padding: 0px 20px;
+}
+
+.switch span:hover {
+    cursor: pointer;
 }
 
 .photoshop-content {
@@ -358,13 +364,18 @@ hr {
 }
 
 .gallery {
-    width: 100%;
+    width: 90%;
+    margin: 10px auto;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 0 5px 20px white;
 }
 
 .gallery-image {
-    max-width: 340px;
+    min-width: 300px;
+    flex-grow: 1;
     opacity: 1;
     transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;

@@ -34,19 +34,29 @@
 
             <div class="body-wrapper-inner">
                 <div class="inner-subheader">{{webWork.intro}}</div>
-                <div class="switch">
-                    <span ng-click="togglePredix()">PREDIX.IO</span>
-                    <span ng-click="toggleMillerCenter()">MILLER CENTER</span>
-                    <span ng-click="toggleIeee()">IEEE</span>
-                    <span ng-click="togglePowerPlaylist()">POWER PLAYLIST</span>
-                </div>
+                <!--<div class="switch">-->
+                    <!--<span ng-click="togglePredix()">PREDIX.IO</span>-->
+                    <!--<span ng-click="toggleMillerCenter()">MILLER CENTER</span>-->
+                    <!--<span ng-click="toggleIeee()">IEEE</span>-->
+                    <!--<span ng-click="togglePowerPlaylist()">POWER PLAYLIST</span>-->
+                <!--</div>-->
 
                 <div class="web-projects">
-                    <div ng-show="showPredix" class="project">
-                        <div class="project-title"><a href="{{}}">Predix.io</a></div>
+                    <ul>
+                        <li ng-repeat="project in webWork.projects">
+                            <span><strong><a href="{{project.url}}" target="_blank">{{project.name}}</a></strong></span>
+                            <br />
+                            <span>{{project.description}}</span>
+                        </li>
+                    </ul>
+                    <!---->
+                    <!---->
+                    <!---->
+                    <!--<div ng-show="showPredix" class="project">-->
+                        <!--<div class="project-title"><a href="{{webWork.projects}}">Predix.io</a></div>-->
 
 
-                    </div>
+                    <!--</div>-->
                 </div>
             </div>
         </div><!--End ng-controller-->

@@ -3,7 +3,7 @@
 eventsApp.controller('WebWorkController',
     function WebWorkController($scope) {
 
-        $scope.showPredix = true;
+        $scope.showPredix = false;
         $scope.showMc = false;
         $scope.showIeee = false;
         $scope.showPowerPlaylist = false;

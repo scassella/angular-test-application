@@ -3,7 +3,7 @@
 eventsApp.controller('AdobeController',
     function AdobeController($scope) {
 
-        $scope.showPhotoshop = true;
+        $scope.showPhotoshop = false;
         $scope.showIndesign = false;
         $scope.showIllustrator = false;
 
