@@ -7,6 +7,7 @@ eventsApp.controller('ContactController',
             title: 'Contact Me',
             imageUrl: '/img/gallery/larm-rmah-smallest.jpg',
             intro: '', //NOTE: Can added angular style for intro depending on if it is empty or not. If empty on a subpage, the div should not have any styles.
+            meImage: '',
             address: {
                 street: '829 Filbert St',
                 city: 'San Francisco',

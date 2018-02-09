@@ -79,34 +79,34 @@ eventsApp.controller('AboutController',
                 ],
                 skills: [
                     {   name: 'JavaScript',
-                        proficiency: '1'
+                        proficiency: '~~~~~~~~~~'
                     },
                     {   name: 'JQuery',
-                        proficiency: '1'
+                        proficiency: '~~~~~'
                     },
                     {   name: 'Angular',
-                        proficiency: '1'
+                        proficiency: '~~~~~~~'
                     },
                     {   name: 'Vue',
-                        proficiency: '1'
+                        proficiency: '~~~~~~~'
                     },
                     {   name: 'Java',
-                        proficiency: '1'
+                        proficiency: '~~~~'
                     },
                     {   name: 'C',
-                        proficiency: '1'
+                        proficiency: '~~~~'
                     },
                     {   name: 'HTML5',
-                        proficiency: '1'
+                        proficiency: '~~~~~~~~~~'
                     },
                     {   name: 'CSS',
-                        proficiency: '1'
+                        proficiency: '~~~~~~~~~~'
                     },
                     {   name: 'Mustache and Handlebars',
-                        proficiency: '1'
+                        proficiency: '~~~~~'
                     },
                     {   name: 'Adobe Creative Suite - Photoshop, Illustrator, and InDesign',
-                        proficiency: '1'
+                        proficiency: '~~~~~~~~'
                     }
                 ],
                 hobbies: [
@@ -115,7 +115,7 @@ eventsApp.controller('AboutController',
                     },
                     {
                         name: 'Boxing'
-                    },
+                    }
                 ]
             },
             favoriteFoods: [

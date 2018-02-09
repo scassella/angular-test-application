@@ -14,14 +14,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35024753">
+    <splitter split-orientation="horizontal" split-proportion="0.24133663">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/css/app.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="363" column="1" lean-forward="true" selection-start-line="363" selection-start-column="1" selection-end-line="363" selection-end-column="1" />
+                <state relative-caret-position="747">
+                  <caret line="454" column="0" lean-forward="true" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -61,11 +61,51 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="adobeController.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="adobeController.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/controllers/adobeController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="70" column="64" lean-forward="true" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+                <state relative-caret-position="1260">
+                  <caret line="76" column="119" lean-forward="true" selection-start-line="76" selection-start-column="119" selection-end-line="76" selection-end-column="119" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="contactController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/js/controllers/contactController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="aboutController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/js/controllers/aboutController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="182">
+                  <caret line="93" column="43" lean-forward="true" selection-start-line="93" selection-start-column="43" selection-end-line="93" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="contactPage.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/contactPage.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="542">
+                  <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -98,19 +138,19 @@
         <option value="$PROJECT_DIR$/app/js/controllers/footerController.js" />
         <option value="$PROJECT_DIR$/app/about.html" />
         <option value="$PROJECT_DIR$/app/adobe.html" />
-        <option value="$PROJECT_DIR$/app/contactPage.html" />
         <option value="$PROJECT_DIR$/app/film.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/userExperience.html" />
-        <option value="$PROJECT_DIR$/app/js/controllers/contactController.js" />
         <option value="$PROJECT_DIR$/app/js/controllers/EventController.js" />
         <option value="$PROJECT_DIR$/app/js/controllers/filmController.js" />
         <option value="$PROJECT_DIR$/app/js/controllers/userExperienceController.js" />
-        <option value="$PROJECT_DIR$/app/js/controllers/aboutController.js" />
         <option value="$PROJECT_DIR$/app/js/controllers/webWorkController.js" />
         <option value="$PROJECT_DIR$/app/webWork.html" />
-        <option value="$PROJECT_DIR$/app/css/app.css" />
         <option value="$PROJECT_DIR$/app/js/controllers/adobeController.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/aboutController.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/contactController.js" />
+        <option value="$PROJECT_DIR$/app/contactPage.html" />
+        <option value="$PROJECT_DIR$/app/css/app.css" />
       </list>
     </option>
   </component>
@@ -339,7 +379,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47969000" />
+    <option name="totallyTimeSpent" value="48563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1002" extended-state="6" />
@@ -486,6 +526,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="26" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -611,6 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/contactPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -680,13 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/contactController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -729,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/aboutController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -761,14 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/webWork.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -777,18 +788,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/app.css">
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/adobeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="363" column="1" lean-forward="true" selection-start-line="363" selection-start-column="1" selection-end-line="363" selection-end-column="1" />
+        <state relative-caret-position="1260">
+          <caret line="76" column="119" lean-forward="true" selection-start-line="76" selection-start-column="119" selection-end-line="76" selection-end-column="119" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/adobeController.js">
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/aboutController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="70" column="64" lean-forward="true" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+        <state relative-caret-position="182">
+          <caret line="93" column="43" lean-forward="true" selection-start-line="93" selection-start-column="43" selection-end-line="93" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/contactController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/contactPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="454" column="0" lean-forward="true" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
           <folding />
         </state>
       </provider>
