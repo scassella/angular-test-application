@@ -1,7 +1,26 @@
 /* app css stylesheet */
-body {
+html {/*good*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {/*good*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
     background-color: whitesmoke;
     font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-sara {/*good*/
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    flex-grow: 1;
 }
 
 a:hover {
@@ -19,93 +38,85 @@ a:active {
     font-size: 2rem;
 }
 
-.hoverwell:hover {
-  background-color: #52575c;
-  cursor: pointer;
-}
+/*.hoverwell:hover {*/
+  /*background-color: #52575c;*/
+  /*cursor: pointer;*/
+/*}*/
 select, textarea {
   color: #52575c;
 }
 
-.well-title {
-  margin-top: 0px;
-}
-.session {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+/*.well-title {*/
+  /*margin-top: 0px;*/
+/*}*/
+/*.session {*/
+    /*-webkit-touch-callout: none;*/
+    /*-webkit-user-select: none;*/
+    /*-khtml-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+/*}*/
 
-.votingWidget {
-  height: 64px;
-  padding: 7px;
-}
+/*.votingWidget {*/
+  /*height: 64px;*/
+  /*padding: 7px;*/
+/*}*/
 
-.votingButton {
-  padding-left:6px;
-  cursor:pointer;
-}
+/*.votingButton {*/
+  /*padding-left:6px;*/
+  /*cursor:pointer;*/
+/*}*/
 
-.sessionThumbnail {
-    height:100%;
-    overflow: hidden;
-}
+/*.sessionThumbnail {*/
+    /*height:100%;*/
+    /*overflow: hidden;*/
+/*}*/
 
 
-.calendar{
-    border: 1px solid #555;
-    width: 238px;
-}
-.calendar .row {
-    margin-left: 0px;
-}
-.calendar .row div{
-    float:left;
-    padding:2px;
-    width:30px;
-    text-align:center;
-}
-.calendar-nav-left {
-    float:left;
-    width: 20px;
-    padding:2px;
-}
-.calendar-nav-right {
-    float:left;
-    width: 20px;
-    padding:2px;
-    text-align:right;
-}
+/*.calendar{*/
+    /*border: 1px solid #555;*/
+    /*width: 238px;*/
+/*}*/
+/*.calendar .row {*/
+    /*margin-left: 0px;*/
+/*}*/
+/*.calendar .row div{*/
+    /*float:left;*/
+    /*padding:2px;*/
+    /*width:30px;*/
+    /*text-align:center;*/
+/*}*/
+/*.calendar-nav-left {*/
+    /*float:left;*/
+    /*width: 20px;*/
+    /*padding:2px;*/
+/*}*/
+/*.calendar-nav-right {*/
+    /*float:left;*/
+    /*width: 20px;*/
+    /*padding:2px;*/
+    /*text-align:right;*/
+/*}*/
 
-.calendar .row .calendar-hdr {
-    padding:2px;
-    float:left;
-    width: 166px;
-    text-align:center;
-}
-.pointer {
-    cursor: pointer;
-}
-.date-picker {
-    position: absolute;
-    top: -7px;
-    left: 209px;
-    background-color: #272b30;
-}
+/*.calendar .row .calendar-hdr {*/
+    /*padding:2px;*/
+    /*float:left;*/
+    /*width: 166px;*/
+    /*text-align:center;*/
+/*}*/
+/*.pointer {*/
+    /*cursor: pointer;*/
+/*}*/
+/*.date-picker {*/
+    /*position: absolute;*/
+    /*top: -7px;*/
+    /*left: 209px;*/
+    /*background-color: #272b30;*/
+/*}*/
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none;
-}
-
-.container-sara {
-    width: 100%;
-    margin: auto;
-    height: 100%;
-    min-height: 100%;
-    position: relative;
 }
 
 .navbar-sara {
@@ -159,7 +170,7 @@ a {
 
 .header {
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .header-info {
@@ -200,7 +211,7 @@ a {
 
 .inner-header {
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .inner-header-info {
@@ -438,92 +449,92 @@ hr {
     /*padding: 10px;*/
 /*}*/
 
-.footer-sara {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.footer {/*good*/
     height: 40px;
     width: 100%;
     margin: 0;
-}
-
-.index-footer {
-    background-image: url('../img/gallery/yousef-espanioly-smallest.jpg');
-}
-
-.about-footer {
-    background-image: url('../img/gallery/willian-justen-de-vasconcellos.jpg');
-}
-
-.resume-footer {
-    background-image: url('../img/gallery/james-donaldson-smallest.jpg');
-}
-
-.adobe-footer {
-    background-image: url('../img/gallery/aaron-burden-smallest.jpg');
-}
-
-.ux-footer {
-    background-image: url('../img/gallery/chris-holgersson-smallest.jpg');
-}
-
-.web-footer {
-    background-image: url('../img/gallery/spencer-watson-smallest.jpg');
-}
-
-.film-footer {
-    background-image: url('../img/gallery/jakob-owens-smallest.jpg');
-}
-
-.contact-footer {
-    background-image: url('../img/gallery/larm-rmah-smallest.jpg');
-}
-
-.footer-overlay {
-    margin: 0;
     padding: 0;
     background-color: white;
-    opacity: 0.5;
     display: flex;
-    justify-content: center;
-}
-
-.copyright {
-    display: flex;
-    justify-content: flex-start;
     flex-direction: row;
-    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.copyright {/*good*/
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*flex-direction: row;*/
+    /*flex-grow: 1;*/
+    /*margin: 0;*/
+    /*padding: 5px 20px;*/
+    /*line-height: 0;*/
+}
+
+.copyright p {/*good*/
     margin: 0;
-    padding: 0 20px;
+    padding: 5px 20px;
 }
 
-.copyright p {
-    padding-top: 10px;
-    color: black;
-    text-align: left;
-    flex-grow: 1;
+.social {/*good*/
+    /*border: 2px solid yellow;*/
 }
 
-.social {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-grow: 1;
-    padding: 0 20px;
-    margin: 0;
-}
-
-.social-link {
-    color: black;
+.social-links {/*good*/
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
-.social-link a {
+.social-link {/*good*/
     margin: 0;
-    padding: 5px 5px;
-    max-width: 30px;
+    padding: 0;
 }
+
+.social-link a {/*good*/
+    width: 30px;
+    margin: 2px 5px;
+    padding: 0;
+}
+
+.social-link img {/*good*/
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/*.index-footer {*/
+    /*background-image: url('../img/gallery/yousef-espanioly-smallest.jpg');*/
+/*}*/
+
+/*.about-footer {*/
+    /*background-image: url('../img/gallery/willian-justen-de-vasconcellos.jpg');*/
+/*}*/
+
+/*.resume-footer {*/
+    /*background-image: url('../img/gallery/james-donaldson-smallest.jpg');*/
+/*}*/
+
+/*.adobe-footer {*/
+    /*background-image: url('../img/gallery/aaron-burden-smallest.jpg');*/
+/*}*/
+
+/*.ux-footer {*/
+    /*background-image: url('../img/gallery/chris-holgersson-smallest.jpg');*/
+/*}*/
+
+/*.web-footer {*/
+    /*background-image: url('../img/gallery/spencer-watson-smallest.jpg');*/
+/*}*/
+
+/*.film-footer {*/
+    /*background-image: url('../img/gallery/jakob-owens-smallest.jpg');*/
+/*}*/
+
+/*.contact-footer {*/
+    /*background-image: url('../img/gallery/larm-rmah-smallest.jpg');*/
+/*}*/
 
 @media (max-width: 769px) {
 

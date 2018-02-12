@@ -3,7 +3,7 @@
 sarasApp.controller('FooterController',
     function FooterController($scope, footerStyleService, $routeParams, $route) {
 
-        $scope.backgroundColor = 'url(\'/img/gallery/yousef-espanioly-smallest.jpg\')';
+        $scope.backgroundColor = 'white';
         // $scope.$route = $route;
         //
         // $scope.$watch(function() {
@@ -35,7 +35,7 @@ sarasApp.controller('FooterController',
             social: [
                 {
                     name: 'Github',
-                    image: '/img/icons/github.svg',
+                    image: '/img/icons/github.png',
                     url: 'https://github.com/scassella'
                 },
                 {

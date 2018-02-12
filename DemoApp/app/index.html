@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Sara Cassella</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="/css/bootstrap.min.css"/>-->
     <link rel="stylesheet" href="/css/app.css"/>
 </head>
 <body ng-cloak> <!--Hides this whole element until all of the angular has been parsed and processed OR if you keep your angular script tag in the head, angular will process sooner rather than later on page rendering lifecycle. -->
     <div class="container-sara">
-
         <div class="navbar-sara" ng-controller="NavController">
             <div class="logo">{{logo}}</div>
             <ul class="nav-sara">
@@ -19,18 +18,16 @@
         <ng-view></ng-view>
 
     </div>
-    <div ng-controller="FooterController">
-        <div class="footer-sara">
-            <div class="footer-overlay" ng-style="footerBackground">
-                <div class="copyright">
-                    <p>{{footer.copyright}}</p>
-                </div>
-                <ul class="social">
-                    <li class="social-link" ng-repeat="link in footer.social">
-                        <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
-                    </li>
-                </ul>
-            </div>
+    <div ng-controller="FooterController" class="footer">
+        <div class="copyright">
+            <p>{{footer.copyright}}</p>
+        </div>
+        <div class="social">
+            <ul class="social-links">
+                <li class="social-link" ng-repeat="link in footer.social">
+                <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
+                </li>
+            </ul>
         </div>
     </div>
 
