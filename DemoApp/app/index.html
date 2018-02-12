@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/css/app.css"/>
 </head>
 <body ng-cloak> <!--Hides this whole element until all of the angular has been parsed and processed OR if you keep your angular script tag in the head, angular will process sooner rather than later on page rendering lifecycle. -->
-    <div class="container-sara">
-        <div class="navbar-sara" ng-controller="NavController">
+    <div class="container">
+        <div class="navbar" ng-controller="NavController">
             <div class="logo">{{logo}}</div>
-            <ul class="nav-sara">
+            <ul class="nav">
                 <li ng-repeat="tab in nav"><a href="{{tab.href}}" target="{{tab.target}}">{{tab.name | uppercase}}</a></li>
             </ul>
         </div>

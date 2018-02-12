@@ -16,7 +16,7 @@ body {/*good*/
     justify-content: space-between;
 }
 
-.container-sara {/*good*/
+.container {/*good*/
     width: 100%;
     margin: 0;
     height: 100%;
@@ -119,7 +119,7 @@ select, textarea {
     display: none;
 }
 
-.navbar-sara {
+.navbar {
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -137,7 +137,7 @@ select, textarea {
     text-align: center;
 }
 
-.nav-sara {
+.nav {
     display: flex;
     list-style: none;
     margin: 0;
@@ -145,7 +145,7 @@ select, textarea {
     justify-content: center;
 }
 
-a {
+.nav a {
     margin: 10px;
     text-transform: uppercase;
     text-align: center;
@@ -430,25 +430,6 @@ hr {
     -webkit-transition: opacity 0.5s ease-in-out;
 }
 
-/*.footer {*/
-    /*height: 350px;*/
-    /*background-color: teal;*/
-    /*opacity: 0.5;*/
-/*}*/
-
-/*.footer-inner {*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    /*height: 310px;*/
-/*}*/
-
-/*.map-widget {*/
-    /*opacity: 1;*/
-    /*margin: 20px;*/
-    /*padding: 10px;*/
-/*}*/
-
 .footer {/*good*/
     height: 40px;
     width: 100%;
@@ -461,13 +442,7 @@ hr {
 }
 
 .copyright {/*good*/
-    /*display: flex;*/
-    /*justify-content: flex-start;*/
-    /*flex-direction: row;*/
-    /*flex-grow: 1;*/
-    /*margin: 0;*/
-    /*padding: 5px 20px;*/
-    /*line-height: 0;*/
+
 }
 
 .copyright p {/*good*/
@@ -476,7 +451,7 @@ hr {
 }
 
 .social {/*good*/
-    /*border: 2px solid yellow;*/
+
 }
 
 .social-links {/*good*/
@@ -493,48 +468,16 @@ hr {
 }
 
 .social-link a {/*good*/
-    width: 30px;
-    margin: 2px 5px;
+    width: 40px;
+    margin: 0;
     padding: 0;
 }
 
 .social-link img {/*good*/
     width: 30px;
-    margin: 0;
+    margin: 5px 5px;
     padding: 0;
 }
-
-/*.index-footer {*/
-    /*background-image: url('../img/gallery/yousef-espanioly-smallest.jpg');*/
-/*}*/
-
-/*.about-footer {*/
-    /*background-image: url('../img/gallery/willian-justen-de-vasconcellos.jpg');*/
-/*}*/
-
-/*.resume-footer {*/
-    /*background-image: url('../img/gallery/james-donaldson-smallest.jpg');*/
-/*}*/
-
-/*.adobe-footer {*/
-    /*background-image: url('../img/gallery/aaron-burden-smallest.jpg');*/
-/*}*/
-
-/*.ux-footer {*/
-    /*background-image: url('../img/gallery/chris-holgersson-smallest.jpg');*/
-/*}*/
-
-/*.web-footer {*/
-    /*background-image: url('../img/gallery/spencer-watson-smallest.jpg');*/
-/*}*/
-
-/*.film-footer {*/
-    /*background-image: url('../img/gallery/jakob-owens-smallest.jpg');*/
-/*}*/
-
-/*.contact-footer {*/
-    /*background-image: url('../img/gallery/larm-rmah-smallest.jpg');*/
-/*}*/
 
 @media (max-width: 769px) {
 
