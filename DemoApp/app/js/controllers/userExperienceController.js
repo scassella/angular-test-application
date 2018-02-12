@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('UserExperienceController',
+sarasApp.controller('UserExperienceController',
     function UserExperienceController($scope) {
 
         $scope.userExperience = {

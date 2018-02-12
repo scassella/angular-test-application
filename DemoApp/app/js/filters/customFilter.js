@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.filter('tastiness', function() {
+sarasApp.filter('tastiness', function() {
     return function(tastiness) {
         switch (tastiness) {
             case 1:

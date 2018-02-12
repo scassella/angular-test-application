@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('ContactController',
+sarasApp.controller('ContactController',
     function ContactController($scope, saraData, emailService) {
 
         $scope.contact = {

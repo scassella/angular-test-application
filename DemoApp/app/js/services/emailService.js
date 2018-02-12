@@ -1,4 +1,4 @@
-eventsApp.factory('emailService', function () {
+sarasApp.factory('emailService', function () {
     return {
         //don't user $ on your own services, you dont want to accidentally overwrite an angular service.
         formatEmail: function (contactForm) {

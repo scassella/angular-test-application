@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('FilmController',
+sarasApp.controller('FilmController',
     function FilmController($scope) {
 
         $scope.film = {

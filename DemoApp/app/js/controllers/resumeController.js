@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('ResumeController',
+sarasApp.controller('ResumeController',
     function ResumeController($scope) {
 
         $scope.resume = {

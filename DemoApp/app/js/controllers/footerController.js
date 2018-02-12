@@ -1,7 +1,34 @@
 'use strict';
 
-eventsApp.controller('FooterController',
-    function FooterController($scope) {
+sarasApp.controller('FooterController',
+    function FooterController($scope, footerStyleService, $routeParams, $route) {
+
+        $scope.backgroundColor = 'url(\'/img/gallery/yousef-espanioly-smallest.jpg\')';
+        // $scope.$route = $route;
+        //
+        // $scope.$watch(function() {
+        //     return $route.current;
+        // },function(newValue, oldValue) {
+        //     console.log('NEWVALUE: ', newValue.name);
+        //     switch(newValue.name) {
+        //         case 'main':
+        //             $scope.backgroundColor = 'red';
+        //             console.log('hey');
+        //             break;
+        //         case 'about':
+        //             $scope.backgroundColor = 'purple';
+        //             console.log('hey1');
+        //             break;
+        //         case 'resume':
+        //             $scope.backgroundColor = 'yellow';
+        //             console.log('hey2');
+        //             break;
+        //         case 'adobe':
+        //             $scope.backgroundColor = 'green';
+        //             console.log('hey3');
+        //             break;
+        //     }
+        // });
 
         $scope.footer = {
             copyright: 'Website built with Angular JS by Sara Cassella. 2018',
@@ -22,6 +49,8 @@ eventsApp.controller('FooterController',
                     url: 'https://www.linkedin.com/in/sara-cassella/'
                 }
             ]
-        }
+        };
+
+        $scope.footerBackground = {'background-image' : $scope.backgroundColor}
     }
 );

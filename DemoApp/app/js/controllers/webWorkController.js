@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('WebWorkController',
+sarasApp.controller('WebWorkController',
     function WebWorkController($scope) {
 
         $scope.webWork = {

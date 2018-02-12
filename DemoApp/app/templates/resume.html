@@ -1,0 +1,53 @@
+<div class="container-inner-sara">
+    <div class="inner-page-header-wrapper">
+        <div class="inner-header">
+            <img ng-src="{{resume.imageUrl}}" alt="About Page"/>
+        </div>
+        <div class="inner-header-info">
+            <h1 class="inner-title" ng-bind="resume.title"></h1>
+        </div>
+    </div>
+
+    <div class="body-wrapper-inner">
+        <div class="resume">
+            <p><a href="{{resume.resumeUrl}}" download="saraCassellaResume">Download the pdf</a></p>
+            <div class="resume-body">
+                <div class="section-title">Education</div>
+                <ul class="resume-list education">
+                    <li ng-repeat="school in resume.resume.education">
+                        <span class="resume-title"><strong>{{school.schoolName}}</strong></span><span class="date">{{school.dates}}</span><br />
+                        <span class="resumeSubHeader">{{school.degree}}</span><br />
+                        <span class="resume-description">{{school.description}}</span>
+                    </li>
+                </ul>
+                <div class="section-title">Experience</div>
+                <ul class="resume-list experience">
+                    <li ng-repeat="job in resume.resume.experience">
+                        <span class="resume-title"><strong>{{job.title}}</strong></span><span class="date">{{job.dates}}</span><br />
+                        <span class="resumeSubHeader">{{job.company}}</span><br />
+                        <span class="resume-description">{{job.description}}</span>
+                    </li>
+                </ul>
+                <div class="section-title">Leadership</div>
+                <ul class="resume-list leadership">
+                    <li ng-repeat="role in resume.resume.leadership">
+                        <span class="resume-title"><strong>{{role.name}}</strong></span><br />
+                        <span class="resumeSubHeader">{{role.description}}</span>
+                    </li>
+                </ul>
+                <div class="section-title">Skills</div>
+                <ul class="resume-list skills">
+                    <li ng-repeat="skill in resume.resume.skills">
+                        <span class="resume-title"><strong>{{skill.name}}: </strong>{{skill.proficiency}}</span>
+                    </li>
+                </ul>
+                <div class="section-title">Hobbies</div>
+                <ul class="resume-list hobbies">
+                    <li ng-repeat="hobby in resume.resume.hobbies">
+                        <span class="resume-title">{{hobby.name}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

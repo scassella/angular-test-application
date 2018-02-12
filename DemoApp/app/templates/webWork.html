@@ -1,0 +1,24 @@
+<div class="container-inner-sara">
+    <div class="inner-page-header-wrapper">
+        <div class="inner-header">
+            <img ng-src="{{webWork.imageUrl}}" alt="Film Page"/>
+        </div>
+        <div class="inner-header-info">
+            <h1 class="inner-title" ng-bind="webWork.title"></h1>
+        </div>
+    </div>
+
+    <div class="body-wrapper-inner">
+        <div class="inner-subheader">{{webWork.intro}}</div>
+        <div class="thumbnails-sara">
+            <div class="illustrator adobe-thumbnail">
+                <ul class="adobe-content">
+                    <li  ng-repeat="project in webWork.projects">
+                        <span><a href="{{project.url}}"><strong>{{project.name}}</strong> {{project.type}}</a></span>
+                        <img ng-src="{{project.image}}" alt="WebWork"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-eventsApp.factory('saraData', function () {
+sarasApp.factory('saraData', function () {
    return {
        //don't user $ on your own services, you dont want to accidentally overwrite an angular service.
        sara: {

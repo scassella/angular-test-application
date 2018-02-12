@@ -1,9 +1,9 @@
 'use strict';
 
-eventsApp.controller('EventController',
-    function EventController($scope) {
+sarasApp.controller('MainController',
+    function MainController($scope) {
 
-        $scope.event = {
+        $scope.main = {
             name: 'Saras App',
             title: 'Sara Cassella',
             subheading: 'Web Designer and Developer @ General Electric',
@@ -54,12 +54,5 @@ eventsApp.controller('EventController',
                 }
             ]
         };
-
-        $scope.snippet = '<span style="color:pink">Welcome, friends!</span>';
-        //the pink color doesn't show up in this case because i am using this with ng-bind-html and angular sanitize removes anything that can be deemed unsafe.
-
-        $scope.booleanValue = true;
-
-        $scope.myStyle = {color: 'pink'};
     }
 );

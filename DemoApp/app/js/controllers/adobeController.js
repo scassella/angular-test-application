@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('AdobeController',
+sarasApp.controller('AdobeController',
     function AdobeController($scope) {
 
         $scope.adobe = {

@@ -1,0 +1,20 @@
+<div class="container-inner-sara">
+    <div class="header-wrapper">
+        <div class="header">
+            <img ng-src="{{main.imageUrl}}" alt="Sara's Image"/>
+        </div>
+        <div class="header-info">
+            <h1 class="title" ng-bind="main.title"></h1>
+            <h2 class="subheading" ng-bind="main.subheading"></h2>
+            <h2 class="subsubheading" ng-bind="main.subsubheading"></h2>
+        </div>
+    </div>
+
+    <div class="body-wrapper">
+        <div class="gallery">
+            <div class="gallery-image" ng-repeat="img in main.gallery">
+                <img ng-src="{{img.imageUrl}}"/>
+            </div>
+        </div>
+    </div>
+</div>

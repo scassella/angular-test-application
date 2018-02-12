@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('AboutController',
+sarasApp.controller('AboutController',
     function AboutController($scope) {
 
         $scope.about = {

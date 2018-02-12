@@ -1,43 +1,43 @@
 'use strict';
 
-eventsApp.controller('NavController',
+sarasApp.controller('NavController',
     function NavController($scope) {
         $scope.logo = 'SC';
 
         $scope.nav = [
             {
                 name: 'Home',
-                href: '/index.html',
+                href: '#/main',
                 target: ''
             },
             {
                 name: 'About',
-                href: '/about.html',
+                href: '#/about',
                 target: ''
             },
             {
                 name: 'Resume',
-                href: '/resume.html',
+                href: '#/resume',
                 target: ''
             },
             {
                 name: 'Adobe',
-                href: '/adobe.html',
+                href: '#/adobe',
                 target: ''
             },
             {
                 name: 'UX',
-                href: '/userExperience.html',
+                href: '#/userExperience',
                 target: ''
             },
             {
                 name: 'Web',
-                href: '/webWork.html',
+                href: '#/webWork',
                 target: ''
             },
             {
                 name: 'Film',
-                href: '/film.html',
+                href: '#/film',
                 target: ''
             },
             {
@@ -47,7 +47,7 @@ eventsApp.controller('NavController',
             },
             {
                 name: 'Contact',
-                href: '/contactPage.html',
+                href: '#/contact',
                 target: ''
             }
         ];
