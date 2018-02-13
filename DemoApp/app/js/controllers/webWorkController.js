@@ -26,7 +26,7 @@ sarasApp.controller('WebWorkController',
                 {
                     name: 'Miller Center',
                     url: 'https://www.scu-social-entrepreneurship.org/#home',
-                    image: '/img/webWork/PowerPlaylist.png'
+                    image: '/img/webWork/MillerCenter.png'
                 },
                 {
                     name: 'IEEE WCNC 2017',
