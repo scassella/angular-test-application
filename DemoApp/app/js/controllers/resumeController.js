@@ -5,7 +5,7 @@ sarasApp.controller('ResumeController',
 
         $scope.resume = {
             title: 'Resume',
-            imageUrl: '/img/gallery/james-donaldson-smallest.jpg',
+            imageUrl: '/img/gallery/ashim-d-silva-ps.jpg',
             resumeUrl: '/img/Post-Graduate-Resume.pdf',
             resume: {
                 education: [

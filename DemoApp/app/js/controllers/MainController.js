@@ -10,7 +10,7 @@ sarasApp.controller('MainController',
             subsubheading: 'Digital Technology Leadership Program',
             date: 'February 6, 2018',
             location: 'San Francisco',
-            imageUrl: '/img/gallery/yousef-espanioly-smallest.jpg',
+            imageUrl: '/img/gallery/paul-earle-ps.jpg',
             address: {
                 street: '829 Filbert Street',
                 city: 'San Francisco',
@@ -34,24 +34,6 @@ sarasApp.controller('MainController',
                 {   imageUrl: '/img/gallery/gallery14.jpeg' },
                 {   imageUrl: '/img/gallery/gallery15.jpeg' },
                 {   imageUrl: '/img/gallery/gallery17.jpeg' }
-            ],
-            social: [
-                {   name: 'facebook',
-                    image: '/img/icons/facebook.png',
-                    url: ''
-                },
-                {   name: 'Github',
-                    image: '/img/icons/github.svg',
-                    url: ''
-                },
-                {   name: 'Instagram',
-                    image: '/img/icons/instagram.png',
-                    url: ''
-                },
-                {   name: 'LinkedIn',
-                    image: '/img/icons/linkedIn.png',
-                    url: ''
-                }
             ]
         };
     }

@@ -5,7 +5,7 @@ sarasApp.controller('ContactController',
 
         $scope.contact = {
             title: 'Contact Me',
-            imageUrl: '/img/gallery/larm-rmah-smallest.jpg',
+            imageUrl: '/img/gallery/larm-rmah-ps.jpg',
             intro: '', //NOTE: Can add ng-style for intro depending on if it is empty or not.
             form: {
                 name: '',
