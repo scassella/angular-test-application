@@ -1,7 +1,7 @@
 <div class="container-inner-sara">
     <div class="header-wrapper">
         <div class="header">
-            <img ng-src="{{main.imageUrl}}" alt="Sara's Image"/>
+            <img ng-src="{{main.imageUrl}}" alt="Home Image"/>
         </div>
         <div class="header-info">
             <h1 class="title" ng-bind="main.title"></h1>
@@ -12,9 +12,9 @@
 
     <div class="body-wrapper">
         <div class="gallery">
-            <!--<div class="gallery-image" ng-repeat="img in main.gallery">-->
-                <!--<img ng-src="{{img.imageUrl}}"/>-->
-            <!--</div>-->
+            <div class="gallery-image" ng-repeat="img in main.gallery">
+                <img ng-src="{{img.imageUrl}}"/>
+            </div>
         </div>
     </div>
 </div>

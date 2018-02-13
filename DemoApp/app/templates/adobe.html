@@ -11,9 +11,9 @@
     <div class="body-wrapper-inner">
         <div class="inner-subheader">{{adobe.intro}}</div>
         <div class="thumbnails-sara">
-            <div class="illustrator adobe-thumbnail" ng-show="showIllustrator">
+            <div class="illustrator adobe-thumbnail">
                 <ul class="adobe-content">
-                    <li  ng-repeat="project in adobe.images">
+                    <li ng-repeat="project in adobe.images">
                         <span><a href="{{project.pdf}}" download="saraCassellaAdobe"><strong>{{project.name}}</strong> {{project.type}}</a></span>
                         <img ng-src="{{project.url}}" alt="Adobe"/>
                     </li>

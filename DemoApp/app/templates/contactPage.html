@@ -27,16 +27,17 @@
                 <span class="contact-header">Contact Me:</span>
                 <form class="contact-form" name="contactForm">
                     <fieldset>
-                        <label class="label-sara" for="name">Name:</label>
-                        <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/>
-                        <label class="label-sara" for="date">Date:</label>
-                        <input id="date" type="text" required ng-pattern="/\d\d/\d\d/\d\d/" ng-model="contact.date" placeholder="Today's Date (mm/dd/yy)"/>
-                        <label class="label-sara" for="email">Email:</label>
-                        <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/>
-                        <label class="label-sara" for="message">Message:</label>
-                        <input id="message" type="text" required ng-model="contact.message" placeholder="Your Message"/>
+                        <label class="label-sara" for="name"><strong>Name:</strong></label>
+                        <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/><br />
+                        <label class="label-sara" for="date"><strong>Date:</strong></label>
+                        <input id="date" type="text" required ng-pattern="/\d\d/\d\d/\d\d/" ng-model="contact.date" placeholder="Today's Date (mm/dd/yy)"/><br />
+                        <label class="label-sara" for="email"><strong>Email:</strong></label>
+                        <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/><br />
+                        <label class="label-sara" for="message"><strong>Message:</strong></label>
+                        <input id="message" type="text" required ng-model="contact.message"
+                               placeholder="Your Message"/><br />
 
-                        <label class="label-sara" for="imageUrl">Image: (Try out some two way Angular
+                        <label class="label-sara" for="imageUrl"><strong>Image:</strong> (Try out some two way Angular
                                                                  Binding, and see your
                         image below!)</label>
                         <input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
@@ -44,8 +45,6 @@
                     </fieldset>
                     <br />
                     <img ng-src="{{contact.form.imageUrl}}" src=""/><!--TWO WAY BINDING WITH FIELD ABOVE-->
-                    <br />
-                    <br />
                     <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="sendEmail(contact, contactForm)">Save</button>
                     <button type="button" class="btn btn-default" ng-click="cancelThis()">Cancel</button>
                 </form>
