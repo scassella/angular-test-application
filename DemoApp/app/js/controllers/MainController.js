@@ -6,11 +6,11 @@ sarasApp.controller('MainController',
         $scope.main = {
             name: 'Saras App',
             title: 'Sara Cassella',
-            subheading: 'Web Designer and Developer @ General Electric',
+            subheading: 'UI/UX Developer @ GE Digital',
             subsubheading: 'Digital Technology Leadership Program',
             date: 'February 6, 2018',
             location: 'San Francisco',
-            imageUrl: '/img/gallery/paul-earle-ps.jpg',
+            imageUrl: '/img/photos/malawi2.jpg',
             address: {
                 street: '829 Filbert Street',
                 city: 'San Francisco',

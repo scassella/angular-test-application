@@ -22,11 +22,29 @@ var sarasApp = angular.module('sarasApp', ['ngResource', 'ngRoute'])
             templateUrl: 'templates/resume.html',
             controller: 'ResumeController'
         });
-        $routeProvider.when('/adobe', {
-            name: 'adobe',
-            templateUrl: 'templates/adobe.html',
-            controller: 'AdobeController'
+        $routeProvider.when('/solano', {
+            name: 'Solano Labs',
+            templateUrl: 'templates/solano.html',
+            controller: 'SolanoController'
         });
+        $routeProvider.when('/wise', {
+            name: 'Wise.IO',
+            templateUrl: 'templates/wise.html',
+            controller: 'WiseController'
+        });
+        $routeProvider.when('/predix', {
+            name: 'Predix.IO',
+            templateUrl: 'templates/predix.html',
+            controller: 'PredixController'
+        });
+        $routeProvider.when('/millercenter', {
+            name: 'Miller Center for Social Entrepreneurship',
+            templateUrl: 'templates/millercenter.html',
+            controller: 'McController'
+        });
+
+
+
         $routeProvider.when('/userExperience', {
             name: 'ux',
             templateUrl: 'templates/userExperience.html',

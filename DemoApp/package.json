@@ -1,18 +1,28 @@
 {
-  "name": "demoapp",
+  "name": "sara-app",
   "version": "1.0.0",
-  "description": "This project is a sample application demonstrating a more fully developed realistic single page angular application.",
+  "description": "sara's personal website",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Joe Eames & Jim Cooper",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "1.13.1",
-    "express": "4.13.0"
-  }
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node scripts/web-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "\"name\":",
+    "\"demoapp\""
+  ],
+  "author": "\"version\": \"1.0.0\",",
+  "license": "ISC"
 }
