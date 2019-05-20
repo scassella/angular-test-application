@@ -18,6 +18,9 @@ sarasApp.controller('MainController',
                 zip: '94133'
             },
             about: '',
+            keepingItSimple: 'For my portfolio, I wanted to keep the design as clean and simple as possible. It should be clear to the\n' +
+            '            user visiting this site what projects I have worked on, and how my passion for design and development makes\n' +
+            '            me an asset to any team.',
             projects: [
                 {
                     name: 'Solano Labs (From GE Digital',
@@ -47,7 +50,8 @@ sarasApp.controller('MainController',
                     description: 'Web Designer, Annual Report creator, and marketing intern for Miller Center for Social Entrepreneurship',
                     projectLink: '#/millercenter#top'
                 }
-            ]
+            ],
+            portfolioUrl: 'http://2018.saracassella.com.s3-website-us-west-1.amazonaws.com/#/main',
         };
 
         $scope.contact = {

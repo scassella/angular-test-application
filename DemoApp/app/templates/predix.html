@@ -1,6 +1,6 @@
 <div class="container-inner-sara" id="top">
     <div class="inner-page-header-wrapper">
-        <div class="inner-header" style="opacity: .3;">
+        <div class="inner-header">
             <img ng-src="{{predix.imageUrl}}" alt="Film Page"/>
         </div>
         <div class="inner-header-info">
@@ -8,19 +8,8 @@
         </div>
     </div>
 
-    <div class="body-wrapper-inner">
+    <div class="body-wrapper">
         <div class="inner-subheader">{{predix.intro}}</div>
-        <!--<div ng-repeat="feature in predix.features" class="feature" ng-class-odd="'odd'" ng-class-even="'even'">-->
-            <!--<div>-->
-                <!--<p class="feature-name">{{feature.name}}</p>-->
-                <!--<p class="feature-description">{{feature.description}}</p>-->
-                <!--<p class="feature-name">Impact</p>-->
-                <!--<p class="feature-description">{{feature.impact}}</p>-->
-            <!--</div>-->
-            <!--<div class="feature-image">-->
-                <!--<img src="{{feature.img}}" alt="{{feature.imgAlt}}" />-->
-            <!--</div>-->
-        <!--</div>-->
         <h2>Tools Used</h2>
         <div class="tools">
             <div ng-repeat="tool in predix.tools">

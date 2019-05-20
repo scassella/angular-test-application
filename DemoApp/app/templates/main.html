@@ -1,13 +1,15 @@
 <div class="container-inner-sara">
-    <div id="name-box">
-        <h1 class="name" style="margin-bottom: 40px;">Sara</h1>
-        <h1 class="name" style="margin-bottom: 0; margin-top: 40px;">Cassella</h1>
+    <div id="title">
+        <h1 class="name">Sara</h1>
+        <h1 class="name">Cassella</h1>
     </div>
-    <p class="name-title">UX/UI Developer at GE Digital</p>
+    <p id="sub-title">UX/UI Developer at GE Digital</p>
+
     <hr />
-    <div class="name-content">
+
+    <div class="content">
         <h2>ABOUT ME</h2>
-        <p class="name-sub">Originally from Seattle WA, I have a passion for front-end development and UI/UX design.
+        <p class="body-paragraph">Originally from Seattle WA, I have a passion for front-end development and UI/UX design.
             After graduating from Santa Clara University with a BS in Web Design and Engineering, I joined the
             <a href="https://jobs.gecareers.com/global/en/digital-technology-leadership" target="_blank">
                 Digital Technology Leadership Program
@@ -16,46 +18,52 @@
             Indiana University, and have worked on 3 teams within GE Digital for the rotational program.</p>
 
         <h2>KEEPING IT SIMPLE</h2>
-        <p class="name-sub">For my portfolio, I wanted to keep the design as clean and simple as possible. It should be clear to the
-            user visiting this site what projects I have worked on, and how my passion for design and development makes
-            me an asset to any team.</p>
+        <p class="body-paragraph">{{main.keepingItSimple}}</p>
+
+
         <div class="projects" id="projects">
             <h2>PROJECTS</h2>
             <!--<p class="asset-information">I am hardworking, and extremely interested in researching the best ways to present information to users in an exciting way.-->
             <!--I want to work to empower users to achieve their goals easily and effectively so they always know they are on the right path.</p>-->
-            <div class="gallery-content">
+            <div class="project-list">
                 <div class="project-item" ng-repeat="project in main.projects">
                     <h3>{{project.name}})</h3>
-                    <div style="height: 220px;"><img src="{{project.img}}" alt="{{project.imageAlt}}" style="width: 400px; max-height: 300px;"/></div>
+                    <div><img src="{{project.img}}" alt="{{project.imageAlt}}"/></div>
                     <p>{{project.description}}</p>
                     <a href="{{project.projectLink}}"><button>VIEW PROJECT</button></a>
                 </div>
-                <p>To view previous projects, please visit my <a href="http://2018.saracassella.com.s3-website-us-west-1.amazonaws.com/#/main" target="_blank">2018 Portfolio.</a></p>
-            </div>
-
-            <h2 id="resume">RESUME</h2>
-            <a href="../img/Resume-2019.pdf" download="saraCassellaResume"><button>DOWNLOAD</button></a>
-
-            <h2 id="contact">CONTACT</h2>
-            <div class="contact-wrapper">
-                <div class="me">
-                        <img src="../img/photos/profilepic.jpg" alt="Sara Cassella in Dubrovnik"/>
+                <div class="project-item" style="margin: 0 20px;">
+                    <p>To view previous projects, please visit my <a href="{{main.portfolioUrl}}" target="_blank">2018 Portfolio.</a></p>
                 </div>
-                <div class="form-wrapper">
-                    <form class="contact-form" name="contactForm">
-                        <fieldset>
-                            <label class="label-sara" for="name"><strong>Name:</strong></label>
-                            <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/><br />
-                            <label class="label-sara" for="email"><strong>Email:</strong></label>
-                            <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/><br />
-                            <label class="label-sara" for="message"><strong>Message:</strong></label>
-                            <input id="message" type="text" required ng-model="contact.message"
-                                   placeholder="Your Message"/><br />
+            </div>
+        </div>
 
-                            <label class="label-sara" for="imageUrl"><strong>Image:</strong> (Try out some two way Angular
+
+
+        <h2 id="resume">RESUME</h2>
+        <a href="../img/Resume-2019.pdf" download="saraCassellaResume"><button>DOWNLOAD</button></a>
+
+        <hr style="margin: 120px 0 0 0;"/>
+
+        <h2 id="contact">CONTACT</h2>
+        <div class="contact-wrapper">
+            <div class="me">
+                <img src="../img/photos/profilepic.jpg" alt="Sara Cassella in Dubrovnik"/>
+            </div>
+            <div class="form-wrapper">
+                <form class="contact-form" name="contactForm">
+                    <fieldset>
+                        <label class="label-sara" for="name"><strong>Name:</strong></label>
+                        <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/><br />
+                        <label class="label-sara" for="email"><strong>Email:</strong></label>
+                        <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/><br />
+                        <label class="label-sara" for="message"><strong>Message:</strong></label>
+                        <input id="message" type="text" required ng-model="contact.message"
+                               placeholder="Your Message"/><br />
+                        <label class="label-sara" for="imageUrl"><strong>Image:</strong> (Try out some two way Angular
                                 Binding, and see your
                                 image below!)</label>
-                            <input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
+                        <input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
 
                         </fieldset>
                         <br />

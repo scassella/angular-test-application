@@ -1,14 +1,14 @@
 <div class="container-inner-sara" id="top">
     <div class="inner-page-header-wrapper">
-        <div class="inner-header" style="opacity: .3;">
-            <img ng-src="{{wise.imageUrl}}" alt="Film Page"/>
+        <div class="inner-header">
+            <img ng-src="{{wise.imageUrl}}" alt="Wise IO"/>
         </div>
         <div class="inner-header-info">
             <h1 class="inner-title" ng-bind="wise.title"></h1>
         </div>
     </div>
 
-    <div class="body-wrapper-inner">
+    <div class="body-wrapper">
         <div class="inner-subheader">{{wise.intro}}</div>
         <h2>Features Contributed</h2>
         <div ng-repeat="feature in wise.features" class="feature" ng-class-odd="'odd'" ng-class-even="'even'">

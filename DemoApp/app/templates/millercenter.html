@@ -1,6 +1,6 @@
 <div class="container-inner-sara" id="top">
     <div class="inner-page-header-wrapper">
-        <div class="inner-header" style="opacity: .3;">
+        <div class="inner-header">
             <img ng-src="{{miller.imageUrl}}" alt="Film Page"/>
         </div>
         <div class="inner-header-info">
@@ -8,10 +8,10 @@
         </div>
     </div>
 
-    <div class="body-wrapper-inner">
+    <div class="body-wrapper">
         <div class="inner-subheader">{{miller.intro}}</div>
-        <div class="thumbnails-sara">
-            <div class="illustrator adobe-thumbnail">
+        <div class="thumbnails">
+            <div class="adobe-thumbnail">
                 <ul class="adobe-content">
                     <li ng-repeat="project in miller.images">
                         <span><a href="{{project.pdf}}" download="saraCassellaAdobe"><strong>{{project.name}}</strong> {{project.type}}</a></span>
