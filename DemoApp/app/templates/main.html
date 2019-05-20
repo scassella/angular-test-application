@@ -1,7 +1,7 @@
 <div class="container-inner-sara">
     <div id="name-box">
-        <h1 class="name">Sara</h1>
-        <h1 class="name" style="margin-bottom: 0;">Cassella</h1>
+        <h1 class="name" style="margin-bottom: 40px;">Sara</h1>
+        <h1 class="name" style="margin-bottom: 0; margin-top: 40px;">Cassella</h1>
     </div>
     <p class="name-title">UX/UI Developer at GE Digital</p>
     <hr />
@@ -24,40 +24,22 @@
             <!--<p class="asset-information">I am hardworking, and extremely interested in researching the best ways to present information to users in an exciting way.-->
             <!--I want to work to empower users to achieve their goals easily and effectively so they always know they are on the right path.</p>-->
             <div class="gallery-content">
-                <div class="project-item">
-                    <h3>Solano Labs (From GE Digital)</h3>
-                    <div style="height: 220px;"><img src="../img/photos/userflowsolano.png" alt="Solano Labs User Flow Diagram" style="width: 400px; max-height: 300px;"/></div>
-                    <p>Empowering users to create CI/CD Pipelines in a feedback driven manner.</p>
-                    <a href="#/solano#top"><button>VIEW PROJECT</button></a>
-                </div>
-                <div class="project-item">
-                    <h3>Wise IO (From GE Digital)</h3>
-                    <div style="height: 220px;"><img src="../img/photos/image001.png" alt="Wise IO Scatter Plot Chart" style="width: 400px;"/></div>
-                    <p>Providing charts and integrated graphics to test Data Science Predictions on industrial asset data.</p>
-                    <a href="#/wise#top"><button>VIEW PROJECT</button></a>
-                </div>
-                <div class="project-item">
-                    <h3>GE Digital</h3>
-                    <div style="height: 220px;"><img src="../img/photos/PredixConsole.png" alt="Predix IO Console UI" style="width: 400px;"/></div>
-                    <p>Predix Console for managing applications and services on Cloud Foundry</p>
-                    <a href="#/predix#top"><button>VIEW PROJECT</button></a>
-                </div>
-                <div class="project-item">
-                    <h3>Miller Center for Social Entrepreneurship</h3>
-                    <div style="height: 220px;"><img src="../img/photos/MillerCenter.png" alt="Miller Center Annual Report" style="width: 400px;"/></div>
-                    <p>Web Designer, Annual Report creator, and marketing intern for Miller Center for Social Entrepreneurship</p>
-                    <a href="#/millercenter"><button>VIEW PROJECT</button></a>
+                <div class="project-item" ng-repeat="project in main.projects">
+                    <h3>{{project.name}})</h3>
+                    <div style="height: 220px;"><img src="{{project.img}}" alt="{{project.imageAlt}}" style="width: 400px; max-height: 300px;"/></div>
+                    <p>{{project.description}}</p>
+                    <a href="{{project.projectLink}}"><button>VIEW PROJECT</button></a>
                 </div>
                 <p>To view previous projects, please visit my <a href="http://2018.saracassella.com.s3-website-us-west-1.amazonaws.com/#/main" target="_blank">2018 Portfolio.</a></p>
             </div>
 
-            <h2 id="resume" style="margin-top: 50px;">RESUME</h2>
+            <h2 id="resume">RESUME</h2>
             <a href="../img/Resume-2019.pdf" download="saraCassellaResume"><button>DOWNLOAD</button></a>
 
-            <h2 id="contact" style="margin: 50px 0;">CONTACT</h2>
+            <h2 id="contact">CONTACT</h2>
             <div class="contact-wrapper">
                 <div class="me">
-                        <img ng-src="{{sara.profilePicture}}" alt="Sara Cassella in Dibrovnik"/>
+                        <img src="../img/photos/profilepic.jpg" alt="Sara Cassella in Dubrovnik"/>
                 </div>
                 <div class="form-wrapper">
                     <form class="contact-form" name="contactForm">
@@ -78,8 +60,8 @@
                         </fieldset>
                         <br />
                         <img ng-src="{{contact.form.imageUrl}}" src=""/><!--TWO WAY BINDING WITH FIELD ABOVE-->
-                        <button type="button" class="btn btn-default" ng-click="cancelThis()">Cancel</button>
-                        <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="sendEmail(contact, contactForm)">Send</button>
+                        <button type="button" class="btn btn-default" ng-click="cancelThis()">CANCEL</button>
+                        <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="sendEmail(contact, contactForm)">SEND</button>
                     </form>
                 </div>
             </div>

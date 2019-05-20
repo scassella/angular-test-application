@@ -5,12 +5,17 @@ html {/*good*/
     margin: 0;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+}
+
 body {/*good*/
     height: 100%;
     width: 100%;
     margin: 0;
     background-color: whitesmoke;
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,7 +122,6 @@ select, textarea {
 
 .header-info {
     position: absolute;
-    font-family: Helvetica;
     padding: 70px 0px;
     max-height: 450px;
     text-align: center;
@@ -184,10 +188,6 @@ select, textarea {
     background-color: whitesmoke;
 }
 
-button {
-    border-color: green;
-}
-
 button:hover {
     cursor: pointer;
 }
@@ -195,6 +195,7 @@ button:hover {
 .action-button {
     width: 250px;
     height: 60px;
+    font-weight: bold;
 }
 
 .mission-wrapper {
@@ -238,10 +239,14 @@ hr {
     color: darkgray;
 }
 
-.resume {
+#resume {
     text-align: center;
     color: black;
-    margin: 40px 40px 80px 40px;
+    margin: 100px 40px 30px 40px;
+}
+
+#contact {
+    margin: 100px 40px 50px 40px;
 }
 
 .resume-body {
@@ -406,9 +411,13 @@ input {
 
 button {
     margin-top: 0;
-    width: 100px;
+    width: 140px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    background-color: rgb(69, 172, 229);
+    font-weight: bold;
 }
 
 .label-sara {
@@ -511,11 +520,8 @@ button {
     padding: 0;
 }
 
-@media (max-width: 769px) {
-
-}
-
 #name-box {
+    font-family: Helvetica;
 }
 
 
@@ -540,13 +546,18 @@ button {
     align-items: center;
 }
 
+.name-content h2 {
+    font-family: 'Roboto', Bold;
+}
+
 .name-sub {
     max-width: 800px;
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 2rem;
 }
 
 .projects {
+    margin-top: 100px;
 }
 
 .project-sub {
@@ -562,15 +573,14 @@ button {
     margin-bottom: 50px;
 }
 
+.project-item p {
+    line-height: 2rem;
+}
+
 .project-body {
     max-width: 900px;
     font-size: 1rem;
-    line-height: 1.4rem;
-}
-
-.wise-button-large {
-    width: 200px;
-    margin-bottom: 50px;
+    line-height: 2rem;
 }
 
 .feature {
@@ -594,7 +604,8 @@ button {
 .feature-description {
     text-align: left !important;
     max-width: 100%;
-    margin-left: 20px;
+    margin: 0 20px;
+    line-height: 2rem;
 }
 
 .feature-image {

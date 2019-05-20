@@ -19,7 +19,7 @@ sarasApp.controller('FooterController',
                 {
                     name: 'Portfolio 2018',
                     image: '/img/icons/web.png',
-                    url: 'http://http://2018.saracassella.com.s3-website-us-west-1.amazonaws.com/#/main'
+                    url: 'http://2018.saracassella.com.s3-website-us-west-1.amazonaws.com/#/main'
                 }
             ]
         };
