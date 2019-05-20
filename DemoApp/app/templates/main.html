@@ -1,65 +1,88 @@
 <div class="container-inner-sara">
-    <div class="header-wrapper">
-        <div class="header">
-            <img ng-src="{{main.imageUrl}}" alt="Home Image"/>
-        </div>
-        <div class="header-info">
-            <h1 class="title" ng-bind="main.title"></h1>
-            <h2 class="subheading" ng-bind="main.subheading"></h2>
-            <h2 class="subsubheading" ng-bind="main.subsubheading"></h2>
-        </div>
+    <div id="name-box">
+        <h1 class="name">Sara</h1>
+        <h1 class="name" style="margin-bottom: 0;">Cassella</h1>
     </div>
+    <p class="name-title">UX/UI Developer at GE Digital</p>
+    <hr />
+    <div class="name-content">
+        <h2>ABOUT ME</h2>
+        <p class="name-sub">Originally from Seattle WA, I have a passion for front-end development and UI/UX design.
+            After graduating from Santa Clara University with a BS in Web Design and Engineering, I joined the
+            <a href="https://jobs.gecareers.com/global/en/digital-technology-leadership" target="_blank">
+                Digital Technology Leadership Program
+            </a>
+            at GE Digital. Since then I have gotten an Executive Degree Certificate in Business Administration from
+            Indiana University, and have worked on 3 teams within GE Digital for the rotational program.</p>
 
-    <div class="body-wrapper">
-        <div class="mission-wrapper">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <a href="#/contact"><button class="action-button">CONTACT</button></a>
-                <p class="mission-statement">Passionate about User Experience and Interface Design, with a love for building beautiful and precise web components.</p>
-            </div>
-        </div>
-        <div class="gallery">
+        <h2>KEEPING IT SIMPLE</h2>
+        <p class="name-sub">For my portfolio, I wanted to keep the design as clean and simple as possible. It should be clear to the
+            user visiting this site what projects I have worked on, and how my passion for design and development makes
+            me an asset to any team.</p>
+        <div class="projects" id="projects">
             <h2>PROJECTS</h2>
-            <p class="asset-information">I am hardworking, and extremely interested in researching the best ways to present information to users in an exciting way.
-            I want to work to empower users to achieve their goals easily and effectively so they always know they are on the right path.</p>
+            <!--<p class="asset-information">I am hardworking, and extremely interested in researching the best ways to present information to users in an exciting way.-->
+            <!--I want to work to empower users to achieve their goals easily and effectively so they always know they are on the right path.</p>-->
             <div class="gallery-content">
                 <div class="project-item">
                     <h3>Solano Labs (From GE Digital)</h3>
                     <div style="height: 220px;"><img src="../img/photos/userflowsolano.png" alt="Solano Labs User Flow Diagram" style="width: 400px; max-height: 300px;"/></div>
                     <p>Empowering users to create CI/CD Pipelines in a feedback driven manner.</p>
-                    <a href="#/solano"><button>VIEW PROJECT</button></a>
+                    <a href="#/solano#top"><button>VIEW PROJECT</button></a>
                 </div>
                 <div class="project-item">
                     <h3>Wise IO (From GE Digital)</h3>
                     <div style="height: 220px;"><img src="../img/photos/image001.png" alt="Wise IO Scatter Plot Chart" style="width: 400px;"/></div>
                     <p>Providing charts and integrated graphics to test Data Science Predictions on industrial asset data.</p>
-                    <a href="#/wise"><button>VIEW PROJECT</button></a>
+                    <a href="#/wise#top"><button>VIEW PROJECT</button></a>
                 </div>
                 <div class="project-item">
                     <h3>GE Digital</h3>
                     <div style="height: 220px;"><img src="../img/photos/PredixConsole.png" alt="Predix IO Console UI" style="width: 400px;"/></div>
-                    <p>info text blah blah blah</p>
-                    <a href="#/predix"><button>VIEW PROJECT</button></a>
+                    <p>Predix Console for managing applications and services on Cloud Foundry</p>
+                    <a href="#/predix#top"><button>VIEW PROJECT</button></a>
                 </div>
                 <div class="project-item">
                     <h3>Miller Center for Social Entrepreneurship</h3>
                     <div style="height: 220px;"><img src="../img/photos/MillerCenter.png" alt="Miller Center Annual Report" style="width: 400px;"/></div>
-                    <p>Info text here blah blah vlah</p>
+                    <p>Web Designer, Annual Report creator, and marketing intern for Miller Center for Social Entrepreneurship</p>
                     <a href="#/millercenter"><button>VIEW PROJECT</button></a>
                 </div>
+                <p>To view previous projects, please visit my <a href="http://2018.saracassella.com.s3-website-us-west-1.amazonaws.com/#/main" target="_blank">2018 Portfolio.</a></p>
             </div>
-            <h2>BuildOn</h2>
-            <p style="max-width: 600px; text-align: center;">In October, 2018, 13 of my coworkers and I travelled to Malawi, Africa to build a school with the Organization BuildOn.
-            To learn more about our trek, check out this medium article. LINK</p>
-            <div class="gallery-content">
-                <div class="project-item">
-                    <!--<h3>BuildOn Volunteering</h3>-->
-                    <img style="width: 400px;" src="../img/photos/grouppic.jpg" alt="Malawi Group Pic"/>
-                    <button style="margin: 20px;">GET INVOLVED</button>
+
+            <h2 id="resume" style="margin-top: 50px;">RESUME</h2>
+            <a href="../img/Resume-2019.pdf" download="saraCassellaResume"><button>DOWNLOAD</button></a>
+
+            <h2 id="contact" style="margin: 50px 0;">CONTACT</h2>
+            <div class="contact-wrapper">
+                <div class="me">
+                        <img ng-src="{{sara.profilePicture}}" alt="Sara Cassella in Dibrovnik"/>
+                </div>
+                <div class="form-wrapper">
+                    <form class="contact-form" name="contactForm">
+                        <fieldset>
+                            <label class="label-sara" for="name"><strong>Name:</strong></label>
+                            <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/><br />
+                            <label class="label-sara" for="email"><strong>Email:</strong></label>
+                            <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/><br />
+                            <label class="label-sara" for="message"><strong>Message:</strong></label>
+                            <input id="message" type="text" required ng-model="contact.message"
+                                   placeholder="Your Message"/><br />
+
+                            <label class="label-sara" for="imageUrl"><strong>Image:</strong> (Try out some two way Angular
+                                Binding, and see your
+                                image below!)</label>
+                            <input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
+
+                        </fieldset>
+                        <br />
+                        <img ng-src="{{contact.form.imageUrl}}" src=""/><!--TWO WAY BINDING WITH FIELD ABOVE-->
+                        <button type="button" class="btn btn-default" ng-click="cancelThis()">Cancel</button>
+                        <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="sendEmail(contact, contactForm)">Send</button>
+                    </form>
                 </div>
             </div>
-            <!--<div class="gallery-image" ng-repeat="img in main.gallery">-->
-                <!--<img ng-src="{{img.imageUrl}}"/>-->
-            <!--</div>-->
         </div>
     </div>
 </div>

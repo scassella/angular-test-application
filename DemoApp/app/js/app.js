@@ -42,29 +42,6 @@ var sarasApp = angular.module('sarasApp', ['ngResource', 'ngRoute'])
             templateUrl: 'templates/millercenter.html',
             controller: 'McController'
         });
-
-
-
-        $routeProvider.when('/userExperience', {
-            name: 'ux',
-            templateUrl: 'templates/userExperience.html',
-            controller: 'UserExperienceController'
-        });
-        $routeProvider.when('/webWork', {
-            name: 'webWork',
-            templateUrl: 'templates/webWork.html',
-            controller: 'WebWorkController'
-        });
-        $routeProvider.when('/film', {
-            name: 'film',
-            templateUrl: 'templates/film.html',
-            controller: 'FilmController'
-        });
-        $routeProvider.when('/contact', {
-            name: 'contact',
-            templateUrl: 'templates/contactPage.html',
-            controller: 'ContactController'
-        });
         $routeProvider.otherwise({redirectTo: '/main'});
         //$locationProvider.html5Mode(true);
     });

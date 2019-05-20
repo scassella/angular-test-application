@@ -1,4 +1,4 @@
-<div class="container-inner-sara">
+<div class="container-inner-sara" id="top">
     <div class="inner-page-header-wrapper">
         <div class="inner-header" style="opacity: .3;">
             <img ng-src="{{wise.imageUrl}}" alt="Film Page"/>
@@ -10,14 +10,22 @@
 
     <div class="body-wrapper-inner">
         <div class="inner-subheader">{{wise.intro}}</div>
-        <div class="thumbnails-sara">
-            <div class="illustrator adobe-thumbnail">
-                <ul class="adobe-content">
-                    <li ng-repeat="project in wise.images">
-                        <span><a href="{{project.pdf}}" download="saraCassellaAdobe"><strong>{{project.name}}</strong> {{project.type}}</a></span>
-                        <img ng-src="{{project.url}}" alt="Adobe"/>
-                    </li>
-                </ul>
+        <h2>Features Contributed</h2>
+        <div ng-repeat="feature in wise.features" class="feature" ng-class-odd="'odd'" ng-class-even="'even'">
+            <div>
+                <p class="feature-name">{{feature.name}}</p>
+                <p class="feature-description">{{feature.description}}</p>
+                <p class="feature-name">Impact</p>
+                <p class="feature-description">{{feature.impact}}</p>
+            </div>
+            <div class="feature-image">
+                <img src="{{feature.img}}" alt="{{feature.imgAlt}}" />
+            </div>
+        </div>
+        <h2>Tools Used</h2>
+        <div class="tools">
+            <div ng-repeat="tool in wise.tools">
+                <a href="{{tool.url}}" target="_blank"><img src="{{tool.img}}" alt="{{tool.alt}}"/></a>
             </div>
         </div>
     </div>

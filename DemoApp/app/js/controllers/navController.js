@@ -10,44 +10,19 @@ sarasApp.controller('NavController',
                 href: '#/main',
                 target: ''
             },
-            // {
-            //     name: 'About',
-            //     href: '#/about',
-            //     target: ''
-            // },
             {
-                name: 'Resume',
-                href: '#/resume',
+                name: 'Projects',
+                href: '#/main#projects',
                 target: ''
             },
-            // {
-            //     name: 'Adobe',
-            //     href: '#/adobe',
-            //     target: ''
-            // },
-            // {
-            //     name: 'UX',
-            //     href: '#/userExperience',
-            //     target: ''
-            // },
-            // {
-            //     name: 'Web',
-            //     href: '#/webWork',
-            //     target: ''
-            // },
-            // {
-            //     name: 'Film',
-            //     href: '#/film',
-            //     target: ''
-            // },
-            // {
-            //     name: 'GIT',
-            //     href: 'https://github.com/scassella',
-            //     target: '_blank'
-            // },
+            {
+                name: 'Resume',
+                href: '#/main#resume',
+                target: ''
+            },
             {
                 name: 'Contact',
-                href: '#/contact',
+                href: '#/main#contact',
                 target: ''
             }
         ];

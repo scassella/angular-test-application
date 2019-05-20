@@ -214,6 +214,10 @@ button:hover {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .body-wrapper-inner p {
@@ -353,8 +357,12 @@ hr {
     font-weight: 400;
 }
 
+.me {
+    max-width: 50%;
+}
+
 .me img {
-    width: 500px;
+    max-height: 500px;
 }
 
 .address-wrapper {
@@ -505,4 +513,114 @@ button {
 
 @media (max-width: 769px) {
 
+}
+
+#name-box {
+}
+
+
+.name {
+    font-size: 8rem;
+    line-height: 7rem;
+    margin-left: 80px;
+
+}
+
+.name-title {
+    margin-left: 80px;
+    font-size: 1.8rem;
+
+}
+
+.name-content {
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-sub {
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.projects {
+}
+
+.project-sub {
+    font-size: 1.5rem;
+}
+
+.project-sub-title {
+    font-weight: bold;
+}
+
+.project-img {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.project-body {
+    max-width: 900px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.wise-button-large {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.feature {
+    margin: 40px;
+    width:85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.even {
+    flex-direction: row-reverse;
+}
+
+.feature-name {
+    text-align: left !important;
+    margin-left: 20px;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.feature-description {
+    text-align: left !important;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.feature-image {
+    max-width: 50%;
+    max-height: 300px;
+}
+
+.feature-image img {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.tools img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 20px;
+}
+
+.tools img:hover {
+    opacity: .6;
 }

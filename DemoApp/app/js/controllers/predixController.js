@@ -5,46 +5,43 @@ sarasApp.controller('PredixController',
 
         $scope.predix = {
             title: 'Predix.io',
-            imageUrl: '/img/photos/userflowsolano.png',
-            intro: 'Through my internships, classes, and personal work, I have used the Adobe Creative Suite to' +
-            ' produce infographics, artwork, and marketing materials for Miller Center at Santa Clara University.' +
-            ' Click on an image title below to download the pdf.',
-            images: [
+            imageUrl: '/img/photos/PredixConsole.png',
+            intro: 'First rotation of the Digital Technology Leadership Program at GE Digital.' +
+            'On Predix.io I worked with the team to refactor the registration service, help build the new Predix Console, ' +
+            'and worked on bug fixes',
+            features: [
                 {
-                    name: 'Brochure Cover',
-                    type: 'Illustrator',
-                    url: '/img/adobe/Brochure.png',
-                    pdf: '/img/adobe/Brochure.pdf'
+                    name: 'Time Series Charts',
+                    img: '/img/photos/timeseries.png',
+                    imgAlt: 'Time Series Visualizations',
+                    description: 'Timeseries visualizations for our GE Power and GE Renewables customers.',
+                    impact: 'Allowed customers to effectively QA Data Science predictions to ensure our models were accurate.'
+                }
+            ],
+            tools: [
+                {
+                    name: 'Angular',
+                    img: '../img/icons/angular.png',
+                    url: 'https://angular.io/',
+                    alt: 'Angular'
                 },
                 {
-                    name: 'Brochure Inner',
-                    type: 'Illustrator',
-                    url: '/img/adobe/Brochure2.png',
-                    pdf: '/img/adobe/Brochure.pdf'
+                    name: 'Vue JS',
+                    img: '../img/icons/vue.png',
+                    url: 'https://vuejs.org/',
+                    alt: 'Vue JS'
                 },
                 {
-                    name: 'Final Project',
-                    type: 'Photoshop',
-                    url: '/img/adobe/testPhoto.png',
-                    pdf: ''
+                    name: 'Java',
+                    img: '../img/icons/java.png',
+                    url: 'https://www.java.com/en/',
+                    alt: 'Java'
                 },
                 {
-                    name: 'Poster',
-                    type: 'Illustrator',
-                    url: '/img/adobe/FinalPoster.png',
-                    pdf: '/img/adobe/FinalPoster.pdf'
-                },
-                {
-                    name: 'Infographic',
-                    type: 'Illustrator',
-                    url: '/img/adobe/Infographic.png',
-                    pdf: '/img/adobe/Infographic.pdf'
-                },
-                {
-                    name: 'Miller Center Annual Report',
-                    type: 'InDesign',
-                    url: '/img/adobe/AnnualReport.png',
-                    pdf: '/img/adobe/Annual Report.pdf'
+                    name: 'InVision',
+                    img: '../img/icons/invision.svg',
+                    url: 'https://www.invisionapp.com/',
+                    alt: 'Invision'
                 }
             ]
         };

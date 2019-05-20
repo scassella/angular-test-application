@@ -23,7 +23,7 @@
         <div class="social">
             <ul class="social-links">
                 <li class="social-link" ng-repeat="link in footer.social">
-                <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}"/></a>
+                <a href="{{link.url}}" target="_blank"><img ng-src="{{link.image}}" alt="{{link.name}}"/></a>
                 </li>
             </ul>
         </div>
@@ -36,20 +36,13 @@
     <script src="/lib/angular/angular-resource.js"></script>
     <script src="/lib/angular/angular-route.min.js"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/controllers/AboutController.js"></script>
-    <script src="/js/controllers/AdobeController.js"></script>
     <script src="/js/controllers/SolanoController.js"></script>
     <script src="/js/controllers/WiseController.js"></script>
     <script src="/js/controllers/McController.js"></script>
     <script src="/js/controllers/PredixController.js"></script>
-    <script src="/js/controllers/ContactController.js"></script>
-    <script src="/js/controllers/FilmController.js"></script>
     <script src="/js/controllers/FooterController.js"></script>
     <script src="/js/controllers/MainController.js"></script>
     <script src="/js/controllers/NavController.js"></script>
-    <script src="/js/controllers/ResumeController.js"></script>
-    <script src="/js/controllers/UserExperienceController.js"></script>
-    <script src="/js/controllers/WebWorkController.js"></script>
     <script src="/js/services/saraData.js"></script>
     <script src="/js/services/emailService.js"></script>
     <script src="/js/services/footerStyleService.js"></script>
