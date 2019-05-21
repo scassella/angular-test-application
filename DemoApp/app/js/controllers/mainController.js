@@ -18,12 +18,11 @@ sarasApp.controller('MainController',
                 zip: '94133'
             },
             about: '',
-            keepingItSimple: 'For my portfolio, I wanted to keep the design as clean and simple as possible. It should be clear to the\n' +
-            '            user visiting this site what projects I have worked on, and how my passion for design and development makes\n' +
-            '            me an asset to any team.',
+            keepingItSimple: 'My portfolio is clean and simple for a reason - to show any user visiting this site what ' +
+            'projects I have worked on, and how my passion for design and development makes me an asset to any team.',
             projects: [
                 {
-                    name: 'Solano Labs (From GE Digital',
+                    name: 'Solano Labs (From GE Digital)',
                     img: '../img/photos/userflowsolano.png',
                     imageAlt: 'Solano Labs User Flow Diagram',
                     description: 'Empowering users to create CI/CD Pipelines in a feedback driven manner.',
@@ -73,7 +72,7 @@ sarasApp.controller('MainController',
         };
 
         $scope.cancelThis = function () {
-            window.location = "/index.html";
+            window.location = "";
         };
     }
 );

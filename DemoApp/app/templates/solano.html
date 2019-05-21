@@ -9,25 +9,14 @@
     </div>
 
     <div class="body-wrapper">
-        <div class="inner-subheader">{{solano.intro}}</div>
-        <img class="solano-project-img" src="../img/photos/solano.png" alt="Existing Solano UI">
-        <p class="project-sub"><span class="project-sub-title">Objective:</span>
-            Completely redesign the existing UI to support the use case of internal GE customers.</p>
-        <p class="project-body">Since we had an existing ui to work with, we started with what was working currently and what needed
-            immediate attention. We interviewed users and had them perform simple tasks throughout the website to gauge
-            their expectations of how things should be done and where those expectations were not met or confusing.</p>
-        <p class="project-sub"><span class="project-sub-title">Process:</span> Start small, and isolate problem areas.</p>
-        <p>We then took those problem areas and broke them down into workflow diagrams:</p>
-        <img class="solano-project-img" src="../img/photos/userflowsolano.png" alt="User Flow Diagram" />
-        <p class="project-body">For more complicated workflows we started from scratch, whereas for simpler workflow we found that updating
-            semantics, terminology, and help text was all that was needed to allow the user to achieve their goal easily.
-            We followed <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">
-                Nielsen's Hueristics</a> as we created our new UI.</p>
-
-        <h2>Challenges</h2>
-        <p class="project-body">With only a few internal users there were not as many people to test with as we would have liked.
-        We brought on new users and users familiar with other CI/CD tools to help remedy this issue.</p>
-        <p style="text-decoration: underline; margin: 20px;">This is an ongoing project, so stay posted for more updates.</p>
+        <div class="body-paragraph">{{solano.intro}}</div>
+        <div class="project-section" ng-repeat="section in solano.sections">
+            <h2>{{section.title}}</h2>
+            <p class="body-paragraph">{{section.body}}</p>
+            <div ng-if="solano.img">
+                <img class="solano-project-img" src="{{section.img}}" alt="{{section.imgAlt}}" />
+            </div>
+        </div>
         <h2>Tools Used</h2>
         <div class="tools">
             <div ng-repeat="tool in solano.tools">

@@ -6,10 +6,10 @@ sarasApp.controller('WiseController',
         $scope.wise = {
             title: 'Wise.IO',
             imageUrl: '/img/photos/image001.png',
-            intro: 'Wise IO is a machine learning company that uses data from industrial assets and uses ' +
-            'data science models to make predictions on alerts or maintenance needs for those assets. Since this work ' +
-            'has previously been done by experienced analysts, for most new customers of wise predictions need to be ' +
-            'validated and confirmed by the analysts before we switch to full automation. My role on wise was to create ' +
+            intro: 'Wise IO is a machine learning company that pulls data from industrial assets into ' +
+            'data science models to make predictions on alerts or maintenance needs for those assets. From the customer' +
+            'standpoint, this work was previously done by experienced analysts, so new customers needed to validate ' +
+            'wise predictions before a switch to full automation. My role on wise was to create ' +
             'dynamic charts for quality assurance of these predictions, as well as overall improvements to the UI for ' +
             'our customers and our team.',
             features: [

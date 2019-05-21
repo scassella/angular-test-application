@@ -9,25 +9,24 @@
 
     <div class="content">
         <h2>ABOUT ME</h2>
-        <p class="body-paragraph">Originally from Seattle WA, I have a passion for front-end development and UI/UX design.
-            After graduating from Santa Clara University with a BS in Web Design and Engineering, I joined the
-            <a href="https://jobs.gecareers.com/global/en/digital-technology-leadership" target="_blank">
-                Digital Technology Leadership Program
-            </a>
-            at GE Digital. Since then I have gotten an Executive Degree Certificate in Business Administration from
-            Indiana University, and have worked on 3 teams within GE Digital for the rotational program.</p>
+        <p class="body-paragraph">
+            My career passion is front-end development and UI/UX design. Originally from Seattle, WA, I graduated
+            from Santa Clara University with a BS in Web Design and Engineering and joined the
+            <a href="https://jobs.gecareers.com/global/en/digital-technology-leadership" target="_blank">Digital Technology Leadership Program</a>
+            at GE Digital in 2017. Since then I have worked on three teams within GE Digital and simultaneously
+            earned an Executive MBA Certificate from Indiana University.</p>
+        <p class="body-paragraph">I am hardworking, and passionate about building precise UI Components and performing
+            user research. I love to learn, and want to work to empower users to achieve their goals easily
+            and effectively so they always know they are on the right path.</p>
 
         <h2>KEEPING IT SIMPLE</h2>
         <p class="body-paragraph">{{main.keepingItSimple}}</p>
 
-
         <div class="projects" id="projects">
             <h2>PROJECTS</h2>
-            <!--<p class="asset-information">I am hardworking, and extremely interested in researching the best ways to present information to users in an exciting way.-->
-            <!--I want to work to empower users to achieve their goals easily and effectively so they always know they are on the right path.</p>-->
             <div class="project-list">
                 <div class="project-item" ng-repeat="project in main.projects">
-                    <h3>{{project.name}})</h3>
+                    <h3>{{project.name}}</h3>
                     <div><img src="{{project.img}}" alt="{{project.imageAlt}}"/></div>
                     <p>{{project.description}}</p>
                     <a href="{{project.projectLink}}"><button>VIEW PROJECT</button></a>
@@ -41,9 +40,9 @@
 
 
         <h2 id="resume">RESUME</h2>
-        <a href="../img/Resume-2019.pdf" download="saraCassellaResume"><button>DOWNLOAD</button></a>
+        <a href="../img/saracassella-resume.pdf" download="saraCassellaResume" style="margin-bottom: 120px;"><button>DOWNLOAD</button></a>
 
-        <hr style="margin: 120px 0 0 0;"/>
+        <hr />
 
         <h2 id="contact">CONTACT</h2>
         <div class="contact-wrapper">
@@ -54,22 +53,22 @@
                 <form class="contact-form" name="contactForm">
                     <fieldset>
                         <label class="label-sara" for="name"><strong>Name:</strong></label>
-                        <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name"/><br />
+                        <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name" style="width: 400px;"/><br />
                         <label class="label-sara" for="email"><strong>Email:</strong></label>
-                        <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email"/><br />
-                        <label class="label-sara" for="message"><strong>Message:</strong></label>
-                        <input id="message" type="text" required ng-model="contact.message"
-                               placeholder="Your Message"/><br />
-                        <label class="label-sara" for="imageUrl"><strong>Image:</strong> (Try out some two way Angular
-                                Binding, and see your
-                                image below!)</label>
-                        <input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>
+                        <input id="email" type="email" required ng-model="contact.email" placeholder="Your Email" style="width: 400px;"/><br />
+                        <label class="label-sara" for="message"><strong>Message:</strong></label><br />
+                        <textarea id="message" required ng-model="contact.message" style="width: 400px; height: 200px;">Your Message...</textarea><br />
+                        <!--<label class="label-sara" for="imageUrl"><strong>Image:</strong> (Try out some two way Angular-->
+                                <!--Binding, and see your-->
+                                <!--image below!)</label>-->
+                        <!--<input id="imageUrl" type="url" class="input-xlarge" ng-model="contact.form.imageUrl" placeholder="a picture of you!"/>-->
 
                         </fieldset>
                         <br />
-                        <img ng-src="{{contact.form.imageUrl}}" src=""/><!--TWO WAY BINDING WITH FIELD ABOVE-->
-                        <button type="button" class="btn btn-default" ng-click="cancelThis()">CANCEL</button>
-                        <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="sendEmail(contact, contactForm)">SEND</button>
+                        <!--<img ng-src="{{contact.form.imageUrl}}" src=""/>&lt;!&ndash;TWO WAY BINDING WITH FIELD ABOVE&ndash;&gt;-->
+                        <button type="button" ng-click="cancelThis()">CANCEL</button>
+                        <button type="submit" title="Input all fields to send"
+                                class="button-submit" ng-disabled="contactForm.$invalid" ng-click="sendEmail(contact, contactForm)">SEND</button>
                     </form>
                 </div>
             </div>

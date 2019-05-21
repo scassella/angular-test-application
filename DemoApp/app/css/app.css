@@ -90,6 +90,12 @@ select, textarea {
     padding: 0;
 }
 
+.container-inner-sara a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
 #title {
     font-family: Helvetica;
     margin: 60px 80px 10px 80px;
@@ -119,13 +125,14 @@ hr {
 }
 
 .content h2 {
-    font-family: 'Roboto', Bold;
+    font-family: 'Helvetica', bold;
 }
 
-/*.asset-information {*/
-/*max-width: 700px;*/
-/*text-align: center;*/
-/*}*/
+.content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 
 .body-paragraph {
     max-width: 800px;
@@ -182,6 +189,12 @@ button:hover {
     cursor: pointer;
 }
 
+button:disabled {
+    background-color: white;
+    color: gray;
+    cursor: default;
+}
+
 #resume {
     text-align: center;
     color: black;
@@ -215,7 +228,7 @@ button:hover {
 }
 
 .contact-form {
-    padding: 20px 20px;
+    padding: 0 20px;
     font-size: 1.2rem;
     line-height: 2.5rem;
     font-weight: 200;
@@ -228,9 +241,18 @@ button:hover {
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 input {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+textarea {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -276,7 +298,7 @@ input {
 
 .body-wrapper {
     margin: 0;
-    padding: 0;
+    padding: 50px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -284,18 +306,22 @@ input {
     margin-bottom: 100px;
 }
 
-.body-wrapper p {
-    text-align: center;
+.body-wrapper h2 {
+    font-family: 'Helvetica', bold;
 }
 
-.inner-subheader {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    font-weight: 300;
-    color: black;
-    margin: 50px 70px;
-}
+/*.body-wrapper p {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.inner-subheader {*/
+    /*text-align: center;*/
+    /*font-size: 1.2rem;*/
+    /*line-height: 2.5rem;*/
+    /*font-weight: 300;*/
+    /*color: black;*/
+    /*margin: 50px 70px;*/
+/*}*/
 
 /* Solano */
 
@@ -304,19 +330,23 @@ input {
     max-width: 600px;
 }
 
-.project-sub {
-    font-size: 1.5rem;
+.project-section {
+    width: 800px;
 }
 
-.project-sub-title {
-    font-weight: bold;
-}
+/*.project-sub {*/
+    /*font-size: 1.5rem;*/
+/*}*/
 
-.project-body {
-    font-size: 1rem;
-    line-height: 2rem;
-    max-width: 800px;
-}
+/*.project-sub-title {*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.project-body {*/
+    /*font-size: 1rem;*/
+    /*line-height: 2rem;*/
+    /*max-width: 800px;*/
+/*}*/
 
 /* Wise */
 

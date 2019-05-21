@@ -8,7 +8,7 @@ sarasApp.controller('PredixController',
             imageUrl: '/img/photos/PredixConsole.png',
             intro: 'First rotation of the Digital Technology Leadership Program at GE Digital.' +
             'On Predix.io I worked with the team to refactor the registration service, help build the new Predix Console, ' +
-            'and worked on bug fixes',
+            'and worked on bug fixes.',
             features: [
                 {
                     name: 'Time Series Charts',
